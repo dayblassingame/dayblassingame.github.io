@@ -1,2 +1,2 @@
 # Portfolio
-self curated, online space that showcases my skills
+self curated, online space that showcases my best work
