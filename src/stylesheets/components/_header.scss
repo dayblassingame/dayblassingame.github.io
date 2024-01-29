@@ -1,0 +1,48 @@
+.p-C-header{
+    height: 6rem;
+    max-width: 100%;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0px;
+
+}
+
+.p-C-logo_span{
+    text-align: right;
+    width: 20%;
+    height: auto;
+
+    .p-C-logo_img{
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+}
+
+.p-C-navBar{
+    width: 55%;
+    height: 4.5rem;
+    padding-top: 25px;
+
+    span{
+        display: inline-block;
+        height: 3rem;
+        width: auto;
+        margin: 0px 5px;
+        
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+
+            &:hover{
+                color: lightgray;
+            }
+        }
+
+        &:hover{
+            border-bottom: 1px solid lightgray;
+        }
+    }
+}
