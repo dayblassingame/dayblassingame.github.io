@@ -23,7 +23,7 @@
 .p-C-navBar{
     width: 55%;
     height: 4.5rem;
-    padding-top: 20px;
+    padding-top: 25px;
 
     span{
         display: inline-block;
@@ -35,6 +35,14 @@
             color: white;
             text-decoration: none;
             font-size: 1rem;
+
+            &:hover{
+                color: lightgray;
+            }
+        }
+
+        &:hover{
+            border-bottom: 1px solid lightgray;
         }
     }
 }
