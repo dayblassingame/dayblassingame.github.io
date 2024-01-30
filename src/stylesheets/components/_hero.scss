@@ -1,0 +1,47 @@
+.p-C-hero{
+    height: 75vh;
+    width: 100%;
+    display: block;
+
+    .p-C-hero_missionContainer{
+        height: 12.5rem;
+        width: 85%;
+        display: block;
+        margin-top: 6rem;
+
+        h2{
+            font-size: 1.4rem;
+            font-family: monospace;
+            font-weight: 600;
+            text-align: right;
+            line-height: 2.1rem;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+
+    button{
+        display: block;
+        height: 2.5rem;
+        width: 85%;
+        margin: 3rem auto;
+
+        font-size: 1.3rem;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: transparent;
+        color: lightgrey;
+
+        border: 2px solid white;
+        border-radius: 6px;
+
+        transition: background-color 2s 1s;
+        transition: color 1s 0s;
+        transition: border 1s 0s;
+
+        &:hover{
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+        }
+    }
+}
