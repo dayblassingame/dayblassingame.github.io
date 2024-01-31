@@ -8,7 +8,12 @@ export function App(){
         <div>
             <Header></Header>
             <main>
-                <Hero/>
+                <div class="p-L-main_background">
+                    <div class="p-L-main_background_line"></div>
+                    <div class="p-L-main_background_line"></div>
+                    <div class="p-L-main_background_line"></div>
+                </div>
+                <Hero className='p-L-hero'/>
             </main>
         </div>
     )
