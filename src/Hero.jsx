@@ -17,12 +17,18 @@ export default function Hero(){
                 text.textContent = currentText + '|';
                 typewriter();
             }
-        },100)
-
+        },90)
     }
 
     useEffect(()=>{
-        typewriter();
+        const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+
+        if(!!isReduced){
+            const text = document.getElementById('mission');
+            text.textContent = mission;
+        }else{
+            typewriter();
+        }
     },[])
 
     return(

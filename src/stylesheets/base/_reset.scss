@@ -9,3 +9,10 @@ body{
     padding: 2.5px;
     background-color: black;
 }
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition-duration: 0s !important;
+    }
+}

@@ -15,7 +15,7 @@
             font-size: 1.4rem;
             font-family: monospace;
             font-weight: 600;
-            text-align: right;
+            text-align: center;
             line-height: 2.1rem;
             text-transform: uppercase;
             color: white;
@@ -39,6 +39,11 @@
         transition: background-color 2s 1s;
         transition: color 1s 0s;
         transition: border 1s 0s;
+        transition: margin-top 2s 6s;
+
+        animation-duration: 11s;
+        animation-name: fadeIn;
+        animation-delay: 0s;
 
         &:hover{
             // background-color: white;
@@ -46,4 +51,10 @@
             border: 2px solid red;
         }
     }
+}
+
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    90%{opacity:0; }
+    100%{opacity:1;}
 }
