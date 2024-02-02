@@ -8,7 +8,7 @@ export function Header(){
                 <a href="#"><img src={Logo} alt="Logo" className="p-C-logo_img"/></a>
             </span>
             <nav className="p-C-navBar">
-                <span><a href=''>About</a></span>
+                <span><a href='#about'>About</a></span>
                 <span><a href=''>Projects</a></span>
                 <span><a href=''>Contact</a></span>
             </nav>

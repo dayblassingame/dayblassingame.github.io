@@ -1,7 +1,8 @@
 import React from 'react';
 import {Header} from './Header';
 import Hero from './Hero';
-import './App.scss'
+import './App.scss';
+import About from './About';
 
 export function App(){
     return(
@@ -14,6 +15,7 @@ export function App(){
                     <div class="p-L-main_background_line"></div>
                 </div>
                 <Hero className='p-L-hero'/>
+                <About/>
             </main>
         </div>
     )

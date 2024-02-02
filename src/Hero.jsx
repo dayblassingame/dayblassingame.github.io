@@ -36,7 +36,9 @@ export default function Hero(){
             <span className="p-C-hero_missionContainer">
                 <h2 id='mission'></h2>
             </span>
-            <button> View Portfolio</button>
+            <a href='google.com'>
+                <button> View Portfolio</button>
+            </a>
         </div>
     );
 }
