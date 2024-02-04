@@ -6,7 +6,7 @@ module.exports = {
     '^.+\\.jsx?$': 'babel-jest',
   },
   moduleNameMapper: {
-    '^@/(.*)$': path.resolve(__dirname, 'src/$1'),
+    "\\.(jpg|ico|jpeg|png|gif|svg)$": "<rootDir>/mocks/fileMock.js",
   },
-  resolver: 'jest-webpack-resolver',
+  testEnvironment: 'jsdom',
 };
