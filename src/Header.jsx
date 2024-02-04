@@ -10,7 +10,7 @@ export function Header(){
             <nav className="p-C-navBar">
                 <span><a href='#about'>About</a></span>
                 <span><a href=''>Projects</a></span>
-                <span><a href=''>Contact</a></span>
+                <span><a href='#contact'>Contact</a></span>
             </nav>
         </header>
     )
