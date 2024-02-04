@@ -17,7 +17,7 @@ export default function Hero(){
                 text.textContent = currentText + '|';
                 typewriter();
             }
-        },90)
+        },80)
     }
 
     useEffect(()=>{
