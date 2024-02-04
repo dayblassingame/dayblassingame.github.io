@@ -1,0 +1,75 @@
+.p-C-hero{
+    height: 70vh;
+    width: 100%;
+    display: block;
+    z-index: 2;
+
+    .p-C-hero_missionContainer{
+        height: 12.5rem;
+        width: 90%;
+        display: block;
+        margin-top: 55%;
+        margin-left: 2rem;
+
+        h2{
+            font-size: 1.4rem;
+            font-family: monospace;
+            font-weight: 600;
+            text-align: center;
+            line-height: 2.1rem;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    button{
+        display: block;
+        height: 2.5rem;
+        width: 85%;
+        margin: 2rem auto;
+
+        font-size: 1.3rem;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: transparent;
+        color: white;
+
+        border: 2px solid white;
+        border-radius: 6px;
+
+        transition: background-color 2s 1s;
+        transition: color 1s 0s;
+        transition: border 1s 0s;
+        transition: margin-top 2s 6s;
+
+        animation-name: fade-in, color-change;
+        animation-duration: 9s, 2s;
+        animation-iteration-count: 1,11;
+        animation-direction: alternate;
+
+        &:hover{
+            // background-color: white;
+            color: red;
+            border: 2px solid red;
+        }
+    }
+}
+
+@keyframes fade-in{
+    0%{opacity: 0;}
+    90%{opacity:0; }
+    100%{opacity:1;}
+}
+
+@keyframes color-change{
+    from{
+        color: red;
+        border-color: red;
+    }to{
+        color: white;
+        border-color: white;
+    }
+}

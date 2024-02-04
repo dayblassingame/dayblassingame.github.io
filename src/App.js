@@ -1,11 +1,22 @@
 import React from 'react';
 import {Header} from './Header';
-import './App.scss'
+import Hero from './Hero';
+import './App.scss';
+import About from './About';
 
 export function App(){
     return(
-        <div>
+        <div className='p-L-app'>
             <Header></Header>
+            <main>
+                <div class="p-L-main_background">
+                    <div class="p-L-main_background_line"></div>
+                    <div class="p-L-main_background_line"></div>
+                    <div class="p-L-main_background_line"></div>
+                </div>
+                <Hero className='p-L-hero'/>
+                <About/>
+            </main>
         </div>
     )
 }
