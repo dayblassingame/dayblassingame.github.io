@@ -1,4 +1,87 @@
 .p-C-about_wrapper{
-    height: 100vh;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    padding: 0rem 0rem;
     background-color: white;
+
+    .p-C-about_img_wrapper{
+        margin-top: 6rem;
+        display: block;
+        height: 280px;
+        width: 100%;
+        overflow: hidden;
+
+        .overlay{
+            position: absolute;
+            z-index: 2;
+            top: 6rem;
+            left: 0; 
+            height: 238px;
+            width: 100%;
+            background-color: rgba(0,0,0,0.2);
+        }
+        
+        img{
+            position: relative;
+            z-index: 0;
+            width: 100%;
+        }
+
+        h1{
+            position: absolute;
+            top: 18%;
+            left: 45%;
+            display: block;
+            height: 3rem;
+            width: 11.5rem;
+            padding: 10px;
+            z-index: 3;
+
+            border-radius: 9px;
+            border: 1px solid white;
+            text-transform: uppercase;
+            font-size: 1.8rem;
+            color: white;
+
+        }
+    }
+
+    .p-C-about_text{
+        display: block;
+        background-color:white; 
+        width: 90%;
+        margin: auto;
+
+        h2{
+            display: block;
+            width: 100%;
+            margin-bottom: 1.5rem;
+
+            text-align: center;
+            text-transform: uppercase;
+            
+            font-size: 1.3rem;
+            line-height: 1.9rem;
+
+            color: $darkgrey;
+        }
+
+        p{
+            width: 90%;
+            display: block;
+            margin: 2rem auto;
+            text-align: center;
+            line-height: 1.5rem;
+            color: $darkgrey;
+        }
+
+        img{
+            display: block;
+            width: 90%;
+            margin: 1rem auto;
+        }
+    }
 }

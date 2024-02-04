@@ -5,7 +5,9 @@
 }
 
 body{
-    width: 100%;
+    display: block;
+    width: 100vw;
+    height: auto;
     padding: 2.5px;
     background-color: black;
 }

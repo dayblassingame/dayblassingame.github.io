@@ -6,7 +6,7 @@ import About from './About';
 
 export function App(){
     return(
-        <div>
+        <div className='p-L-app'>
             <Header></Header>
             <main>
                 <div class="p-L-main_background">

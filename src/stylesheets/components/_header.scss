@@ -1,11 +1,16 @@
 .p-C-header{
-    height: 6rem;
-    max-width: 100%;
+    height: auto;
+    width: 100%;
     
     display: flex;
     flex-direction: row;
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
     justify-content: space-between;
     padding: 10px 0px;
+    background-color: black;
 
 }
 
