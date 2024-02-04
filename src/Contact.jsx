@@ -13,23 +13,13 @@ export default function Contact(){
     return(
         <div id='contact' className="p-C-contact_wrapper">
             <form onSubmit={handleForm} className="p-C-contact_form">
-                <span>
-                    <label>Name:</label>
-                    <input required type="text" id='name' />
-                </span>
-                <span>
-                    <label>Email:</label>
-                    <input required type="email" id='email'/>
-                </span>
-                <span>
-                    <label>Subject:</label>
-                    <input required type="text" id='subject'/>
-                </span>
-                <span>
-                    <label>Message:</label>
-                    <textarea id='message'/>
-                </span>
-                <input type="submit"/>
+                <h1>Contact Info</h1>
+                <p>In search of a developer? Leave me a message!</p>
+                <input required type="text" id='name' placeholder="Name"/>
+                <input required type="email" id='email' placeholder="Email"/>
+                <input required type="text" id='subject' placeholder="Subject"/>
+                <textarea id='message' placeholder="Message"/>
+                <input type="submit" value='SEND'/>
             </form>
         </div>
     )
