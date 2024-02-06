@@ -4,6 +4,7 @@ import Hero from './Hero';
 import './App.scss';
 import About from './About';
 import Contact from './Contact';
+import Footer from './Footer';
 
 export function App(){
     return(
@@ -19,6 +20,7 @@ export function App(){
                 <About/>
                 <Contact/>
             </main>
+            <Footer/>
         </div>
     )
 }
