@@ -47,7 +47,7 @@
 
         animation-name: fade-in, color-change;
         animation-duration: 9s, 2s;
-        animation-iteration-count: 1,11;
+        animation-iteration-count: 1, infinite;
         animation-direction: alternate;
 
         &:hover{
