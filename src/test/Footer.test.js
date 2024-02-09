@@ -15,4 +15,4 @@ describe('Footer', () => {
       expect(screen.getAllByTestId('license')).toBeInTheDocument;
 
     });
-  });
+  }); 
