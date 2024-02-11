@@ -10,7 +10,7 @@ describe('Footer', () => {
       // Assert that the component renders the "Footer" heading
       expect(screen.getByText(/Explore Day Blassingame/i)).toBeInTheDocument();
   
-      // Assert that the component renders the expected text
+      // Assert that the component renders the expected
       expect(screen.getAllByTestId('navLink')).toBeInTheDocument;
       expect(screen.getAllByTestId('license')).toBeInTheDocument;
 
