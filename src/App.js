@@ -3,6 +3,7 @@ import {Header} from './Header';
 import Hero from './Hero';
 import './App.scss';
 import About from './About';
+import Contact from './Contact';
 
 export function App(){
     return(
@@ -16,6 +17,7 @@ export function App(){
                 </div>
                 <Hero className='p-L-hero'/>
                 <About/>
+                <Contact/>
             </main>
         </div>
     )

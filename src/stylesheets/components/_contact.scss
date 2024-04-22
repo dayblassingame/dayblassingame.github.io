@@ -1,0 +1,62 @@
+.p-C-contact_wrapper{
+    height: 100vh;
+    padding: 6rem 0rem;
+    width: 100vw;
+    background-color: white;
+
+    form{
+        display: grid;
+        height: 80vh;
+        width: 100%;
+        padding: 6rem 0rem;
+
+        h1{
+            display: block;
+            margin: 0.5rem auto;
+            color: $darkgrey;
+        }
+
+        p{
+            display: block;
+            width: 100%;
+            padding-bottom: 1rem;
+            font-size: 0.9rem;
+            text-align: center;
+            color: $darkgrey;
+        }
+
+        input{
+            display: block;
+            width: 90%;
+            height: 2.5rem;
+            margin: auto;
+            padding: 0px 5px;
+            border-radius: 6px;
+            border: 1px solid $darkgrey;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        textarea{
+            width: 90%;
+            height: 7rem;
+            padding: 5px 5px;
+            margin: auto;
+            border-radius: 6px;
+            border: 1px solid $darkgrey;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        input[type='submit']{
+            border-radius: 6px;
+            border: 1px solid $darkgrey;
+            background-color: black;
+            color: white;
+
+            &:active{
+                background-color: white;
+                color: black;
+            }
+        }
+    }
+    
+}
