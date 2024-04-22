@@ -54,7 +54,7 @@ export default function Contact(){
         <div id='contact' className="p-C-contact_wrapper">
             <form onSubmit={handleForm} method="POST" className="p-C-contact_form">
                 <h1>Contact Info</h1>
-                <p>In search of a engineer? Send us a message!</p>
+                <p>In search of an engineer? Send us a message!</p>
                 <input required type="text" id='name' placeholder="Name" autoComplete="off" value={newMessage.name} onChange={data}/>
                 <input required type="email" id='email' placeholder="Email" autoComplete="off" value={newMessage.email} onChange={data}/>
                 <input required type="text" id='subject' placeholder="Subject" autoComplete="off" value={newMessage.subject} onChange={data}/>
