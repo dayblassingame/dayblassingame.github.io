@@ -2,20 +2,22 @@ import React from "react";
 import { useEffect } from "react";
 
 export default function Hero(){
-    const mission  =  'I am here to curate bold, modern experiences that positively impact users of all demographics.';
-    let missionArray = mission.split('');
+    const intro  =  "Hello, I'm Day Blassingame.";
+    let introArray = intro.split('');
     let position = 0;
-    let end = missionArray.length;
+    let end = introArray.length;
     let currentText = '';
     
     const typewriter = () => {
-        const text = document.getElementById('mission');
+        const text = document.getElementById('intro');
         setTimeout(()=>{
             if(position < end){
-                currentText += missionArray[position];
+                currentText += introArray[position];
                 position++;
                 text.textContent = currentText + '|';
                 typewriter();
+            }if(position == end){
+                text.textContent = currentText;
             }
         },80)
     }
@@ -24,8 +26,8 @@ export default function Hero(){
         const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`) === true || window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
 
         if(!!isReduced){
-            const text = document.getElementById('mission');
-            text.textContent = mission;
+            const text = document.getElementById('intro');
+            text.textContent = intro;
         }else{
             typewriter();
         }
@@ -34,10 +36,12 @@ export default function Hero(){
     return(
         <div id='hero' className="p-C-hero">
             <span className="p-C-hero_missionContainer">
-                <h2 id='mission'></h2>
+                <h2 id='intro'></h2>
+                <h3> Creative Front-End Engineer</h3>
+
             </span>
             <a href='google.com'>
-                <button> View Portfolio</button>
+                <button> Connect with me</button>
             </a>
         </div>
     );
