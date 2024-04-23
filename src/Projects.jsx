@@ -11,8 +11,7 @@ export default function Projects(){
             <ProjectCard
                 name='CapableTM'
                 imgPath={CapableTM}
-                description='CapableTM is a task manager feature I designed and developed in October of 2023.'
-                features={['ReactJs', 'Sass', 'Responsive']}
+                description='CapableTM is a kaban board constructed with ReactJS, Node.JS, and Sass.'
                 siteLink=''
                 gitLink='https://github.com/dayblassingame/CapableTM'
             />
