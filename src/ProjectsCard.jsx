@@ -4,7 +4,6 @@ export default function ProjectCard (props){
     const name = props.name;
     const description = props.description;
     const imgPath = props.imgPath;
-    const desktopImgPath = props.desktopImgPath;
     const siteLink = props.siteLink;
     const gitLink = props.gitLink;
     const features = props.features;
