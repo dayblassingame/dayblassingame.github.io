@@ -8,8 +8,8 @@
         height: 12.5rem;
         width: 90%;
         display: block;
-        margin-top: 55%;
-        margin-left: 2rem;
+        margin-top: 70%;
+        margin-left: 2rem; 
 
         h2{
             font-size: 1.4rem;
@@ -47,7 +47,7 @@
 
         animation-name: fade-in, color-change;
         animation-duration: 9s, 2s;
-        animation-iteration-count: 1,11;
+        animation-iteration-count: 1, infinite;
         animation-direction: alternate;
 
         &:hover{

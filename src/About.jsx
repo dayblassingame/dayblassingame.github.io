@@ -1,38 +1,38 @@
 import React from "react";
 import aboutImg from './images/aboutImg.jpg';
-import mentorImg from './images/mentorImg.jpg';
 
 export default function About(){
     const bio = {
         imgSrc: aboutImg,
-        img2Src: mentorImg,
-        h1: "About me",
-        h2: "Professional Frontend Engineer having 3 years of experience",
-        p1: "I'm Day Blassingame, a zealous software engineer dedicated to crafting immersive digital solutions. " +
-        "My journey into coding began with a fascination for turning code into visually stunning and functionally robust applications. " +
-        "From there, I earned my Bachelors in computer science from the HBCU with the best computer science program, North Carolina A&T State University, " +
-        "however, my passion for learning didn't stop there.",
-        p2: "Learning is a constant in my journey. I'm passionate about staying ahead of industry trends, absorbing new technologies, and implementing best practices. " +
-        "Each project is an opportunity to enhance my skills and make a meaningful impact, and " + 
-        "my goal is to create solutions that not only meet company requirements but also elevate the user experience to new heights. ",
-        p3: "Beyond coding, I am a mentor and an avid explorer of new hobbies. My current hobbies include cooking, sewing, and outdoor adventures. Discovering new hobbies " +
-        "allow me to further understand my strengths and weaknesses and cultivate my weaknesses into strengths."
+        h1: "I'm a creative Front End Engineer from South Carolina",
+        p1: "Since beginning my journey into web development in 2018, I have developed a passion for infusing digital landscapes with creativity and innovation. " +
+        "I see web development not just as lines of code, but as a canvas where imagination meets functionality. ",
+        p2: "Over the years, I've honed my skills in a variety of technologies including ReactJS, CSS & Sass, and beyond. " +
+        "But what sets me apart is my ability to blend technical expertise with a keen eye for detail. I strive to deliver websites that not only look great but also function flawlessly.",
+        p3: "When I'm not immersed in the digital realm, you can find me exploring the intersection of technology and art, experimenting with new creative tools, " +
+        "or crafting beautiful recipes in my kitchen. Because true creativity knows no bounds, and the best ideas often come from the most unexpected places. ",
+         p4:"Let's connect and turn your digital dreams into reality!."
     }
+
+    const skills = 'HTML, CSS & Sass / ReactJS / Node.js / Webpack / Git / Relational & Cloud Databases / API / Complex Problem Solving / Agile Methodology'
 
     return(
         <div id='about' className='p-C-about_wrapper'> 
+            <h1> About</h1>
             <div className="p-C-about_img_wrapper">
                 <img src={bio.imgSrc} alt="Day Blassingame Image"/>
-                <span className="overlay"></span>
-                <h1>{bio.h1}</h1>
             </div>
             <span className="p-C-about_text">
-                <h2>{bio.h2}</h2>
+                <h2>{bio.h1}</h2>
                 <p>{bio.p1}</p>
                 <p>{bio.p2}</p>
-                <img src={bio.img2Src} alt='mentoring photograph'/>
                 <p>{bio.p3}</p>
+                <p>{bio.p4}</p>
             </span>
+            <div>
+                <h3>Skills</h3>
+                <p>{skills}</p>
+            </div>
         </div>
     )
 }

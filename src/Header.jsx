@@ -9,7 +9,7 @@ export function Header(){
             </span>
             <nav className="p-C-navBar">
                 <span><a href='#about'>About</a></span>
-                <span><a href=''>Projects</a></span>
+                <span><a href='#projects'>Projects</a></span>
                 <span><a href='#contact'>Contact</a></span>
             </nav>
         </header>
