@@ -4,10 +4,10 @@ export default function Footer(){
 
     return(
         <div id='footer' className="p-C-footer_wrapper">
-            <h4>Explore Day Blassingame</h4>
+            <h4>Explore</h4>
             <span className="p-C-footer_navLinks">
                 <a href="#about" data-testid='navLink'>About</a>
-                <a href="#" data-testid='navLink'>Portfolio</a>
+                <a href="#" data-testid='navLink'>Projects</a>
                 <a href="contact" data-testid='navLink'>Contact</a>
             </span>
             <h4>Legal</h4>

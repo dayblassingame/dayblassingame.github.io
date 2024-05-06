@@ -1,0 +1,67 @@
+//font variables
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$font-size-extralarge: 2.8rem;
+$font-size-large: 2.2rem;
+$font-size-medium: 1.7rem;
+$font-size-small: 1.3rem;
+$font-size-extrasmall: 0.9rem;
+
+//line-height variables
+$line-height-extralarge: 3.2rem;
+$line-height-large: 2.6rem;
+$line-height-medium: 2.1rem;
+$line-height-small: 1.8rem;
+$line-height-extrasmall: 1.2rem;
+
+//padding variables
+$padding-extralarge: 32px;
+$padding-large: 16px;
+$padding-medium: 8px;
+$padding-small: 4px;
+$padding-extrasmall: 2.5px;
+
+//margin variables
+$margin-extralarge: 40px;
+$margin-large: 25px;
+$margin-medium: 15px;
+$margin-small: 9px;
+$margin-extrasmall: 5px;
+$margin-section: 4rem;
+
+h1{
+    font-family: $font-family;
+    font-size: $font-size-extralarge;
+    line-height: $line-height-extralarge;
+    font-weight: 600;
+}
+
+h2{
+    font-family: $font-family;
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+    font-weight: 600;
+}
+
+h3{
+    font-family: $font-family;
+    font-size: $font-size-medium;
+    line-height: $line-height-medium;
+
+}
+
+h4{
+    font-family: $font-family;
+    font-size: $font-size-small;
+    line-height: $line-height-small;
+
+}
+
+p{
+    font-family: $font-family;
+    font-size: $font-size-extrasmall;
+    line-height: $line-height-extrasmall;
+}
+
+//header-height variable
+$header-height: 4.2rem;
+

@@ -12,12 +12,7 @@ export function App(){
         <div className='p-L-app'>
             <Header></Header>
             <main>
-                <div className="p-L-main_background">
-                    <div className="p-L-main_background_line"></div>
-                    <div className="p-L-main_background_line"></div>
-                    <div className="p-L-main_background_line"></div>
-                </div>
-                <Hero className='p-L-hero'/>
+                <Hero/>
                 <About/>
                 <Projects/>
                 <Contact/>

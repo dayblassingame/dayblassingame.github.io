@@ -2,24 +2,32 @@ import React from "react";
 import { useEffect } from "react";
 
 export default function Hero(){
-    const intro  =  "Hello, I'm Day Blassingame.";
-    let introArray = intro.split('');
+    const intro = "Day*Blassingame";
     let position = 0;
-    let end = introArray.length;
+    let end = intro.length;
     let currentText = '';
     
-    const typewriter = () => {
+    const delay = (ms) => {
+        setTimeout(()=>(typewriter()),ms)
+    }
+
+    function typewriter(){
         const text = document.getElementById('intro');
         setTimeout(()=>{
+            if(intro.charAt(position) == '*'){
+                currentText = currentText + '\r\n';
+                text.textContent = currentText;
+                position++;
+            }
             if(position < end){
-                currentText += introArray[position];
+                currentText += intro.charAt(position);
                 position++;
                 text.textContent = currentText + '|';
                 typewriter();
             }if(position == end){
                 text.textContent = currentText;
             }
-        },80)
+        },100)
     }
 
     useEffect(()=>{
@@ -29,20 +37,23 @@ export default function Hero(){
             const text = document.getElementById('intro');
             text.textContent = intro;
         }else{
-            typewriter();
+            delay(1500)
         }
     },[])
 
     return(
-        <div id='hero' className="p-C-hero">
-            <span className="p-C-hero_missionContainer">
-                <h2 id='intro'></h2>
-                <h3> Creative Front-End Engineer</h3>
-
-            </span>
-            <a href='google.com'>
-                <button> Connect with me</button>
-            </a>
+        <div id='hero' className="p-L-section_wrapper p-C-background_teal">
+            <span className="overlay"/>
+            <div className="p-C-hero_container">
+                <span className="p-C-hero_introContainer">
+                    <h4>Hi, I'm</h4>
+                    <h1 id='intro'></h1>
+                    <h3>Front End Developer</h3>
+                    <a href="#about">
+                        <button> Learn more</button>
+                    </a>    
+                </span>
+            </div>
         </div>
     );
 }

@@ -9,13 +9,15 @@ export default function ProjectCard (props){
     
     return(
         <div className="p-C-projectCard_wrapper">
-            <h2>{name}</h2>
+            <div className="p-C-projectCard_img_container">
+                <img src={imgPath} alt={name + ' project'} />
+            </div> 
+            <h4>{name}</h4>
 
-            <img src={imgPath} alt={name + ' project'} />
             <p>{description}</p>
             <span>
-                <a className={siteLink==='' ? 'disabled' : siteLink} href={siteLink}>Live Site</a>
-                <a href={gitLink}>Learn More</a>
+                <button className={siteLink==='' ? 'disabled' : ''} href={siteLink}>Live Site</button>
+                <button href={gitLink}>Learn More</button>
             </span>
         </div>
     )

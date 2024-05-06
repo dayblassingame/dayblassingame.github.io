@@ -1,31 +1,35 @@
 .p-C-footer_wrapper{
+    background-color: $overlay;
     display: block;
-    width: 95%;
-    height: fit-content;
-    margin: 2rem auto;
-    border-top: 1px solid white;
+    width: 100%;
+    height: auto;
+    padding: $padding-extralarge auto;
+    border-top: 1px solid $teal;
     overflow: hidden;
 
     h4{
         display: block;
         text-align: center;
         margin: 10px 0px;
-        color: white;
+        color: $teal;
+        font-weight: 400;
+        text-transform: uppercase;
     }
 
     .p-C-footer_navLinks{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
 
         a{
-            width:20%;
-            color: darkgrey;
+            color: $darkgrey;
+            font-size: $font-size-extrasmall;
+            text-decoration: none;
 
             &:hover{
-                color: white;
+                color: $teal;
                 text-decoration: underline;
-                text-decoration-color: white;
+                text-decoration-color: $teal;
             }
         }
     }
@@ -34,9 +38,11 @@
         height: fit-content;
         display: block;
         text-align: center;
+        padding: $padding-extralarge auto;
+
         a{
             text-decoration: none;
-            color: darkgrey;
+            color: $darkgrey;
 
             &:hover{
                 color: white;

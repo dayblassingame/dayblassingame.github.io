@@ -1,11 +1,12 @@
-@import './stylesheets/base/reset';
 @import './stylesheets/base/variables';
+@import './stylesheets/base/reset';
+@import './stylesheets/base/typography';
 @import './stylesheets/utilities/utilities';
-@import './stylesheets/layouts/main';
+@import './stylesheets/layouts/section';
 @import './stylesheets/components/header';
 @import './stylesheets/components/hero';
 @import './stylesheets/components/about';
+@import './stylesheets/components/projects';
 @import './stylesheets/components/contact';
 @import './stylesheets/components/footer';
-@import './stylesheets/layouts/projects';
 @import './stylesheets/components/projectsCard';

@@ -1,5 +1,5 @@
 .p-C-header{
-    height: auto;
+    height: $header-height;
     width: 100%;
     
     display: flex;
@@ -9,9 +9,9 @@
     top: 0;
     left: 0;
     justify-content: space-between;
-    padding: 10px 0px;
-    background-color: black;
-    border-bottom: 0.5px solid white;
+    padding: $padding-medium 0px;
+    background-color: $teal;
+    border-bottom: 0.5px solid $vanilla;
 
 }
 
@@ -21,34 +21,37 @@
     height: auto;
 
     .p-C-logo_img{
-        height: 4.5rem;
-        width: 4.5rem;
+        height: 3.5rem;
+        width: 3.5rem;
     }
 }
 
 .p-C-navBar{
     width: 55%;
-    height: 4.5rem;
-    padding-top: 25px;
+    height: 3rem;
+    padding-top: $padding-large;
 
     span{
         display: inline-block;
-        height: 3rem;
+        height: auto;
         width: auto;
-        margin: 0px 5px;
-        
+        margin: 0px $margin-extrasmall;
+        padding: $padding-small 0px;
         a{
-            color: white;
+            font-size: 13px;
+            color: $vanilla;
             text-decoration: none;
-            font-size: 1rem;
+            text-transform: uppercase;
+            font-family: $font-family;
+            font-weight: 500;
 
             &:hover{
-                color: red;
+                color: $white;
             }
         }
 
         &:hover{
-            border-bottom: 1px solid red;
+            border-bottom: 1px solid $white;
         }
     }
 }

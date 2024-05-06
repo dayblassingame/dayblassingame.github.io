@@ -9,3 +9,17 @@
 .display_none{
     display: none;
 }
+
+.overlay{
+    background-color: $overlay;
+    position: absolute;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.p-C-background_teal{
+    background-color: $teal;
+}

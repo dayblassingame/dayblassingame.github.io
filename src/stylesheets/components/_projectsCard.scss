@@ -1,64 +1,48 @@
 .p-C-projectCard_wrapper{
     display: block;
-    height: fit-content;
+    height: auto;
     width: 90%;
-    margin: auto;
-    margin-top: 20%;
-
+    margin: $margin-large auto;
+    padding: $padding-large auto;
     text-align: center;
-    font-family: Georgia;
-    
-    h2{
-        display: block;
-        width: fit-content;
-        margin: auto;
-        padding: 0.5rem 0rem;
-        color: red;
-        border-bottom: 0.5px solid red;
-    }
 
-    img{
+    .p-C-projectCard_img_container{
         display: block;
-        width: auto;
-        height: 40vh;
-        margin: 2rem auto;
+        width: 90%;
+        margin: auto;
+
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
+    
+    h4{
+        display: block;
+        color: $white;
+        margin: $margin-medium;
     }
 
     p{
-        color: white;
-        margin: 1rem 0rem;
-        line-height: 1.5rem;
-    }
-
-    ul{
-
-        li{
-            display: inline-block;
-            border: 1px solid red;
-            border-radius: 9px; 
-            margin-right: 10px;
-
-            color: white;
-            padding: 0.5rem 1rem;
-            font-size: 0.8rem;
-        }
+        color: $white;
+        margin: $padding-medium 0rem;
     }
 
     span{
         display: block;
-        margin: 1rem 1rem;
+        margin: $margin-medium $margin-medium;
 
-        a{
-            display: inline-block;
-            padding: 0rem 1rem;
-            color: white;
-            text-decoration: none;
+        button{
+            font-size: $font-size-extrasmall;
+            margin: $margin-small $margin-small;
         }
 
         .disabled{
             pointer-events: none;
             cursor: not-allowed;
-            color: lightgrey;
+            background-color: $overlay;
+            color: $white;
+            border-color: $teal;
         }
 
     }
