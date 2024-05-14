@@ -21,11 +21,14 @@ module.exports = {
                     'sass-loader',]
             },
             {
-                test: /\.(svg|png|jpg|jpe?g|gif)$/i,
+                test: /\.(svg|png|jpg|jpe?g|gif|pdf)$/i,
                 use: [
                   {
                     loader: 'file-loader',
-                },
+                    options: {
+                        name: '[name].[ext]'
+                    }
+                    },
                 ],
               },
         ]

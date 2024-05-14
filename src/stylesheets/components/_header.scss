@@ -1,5 +1,5 @@
 .p-C-header{
-    height: auto;
+    height: 4.4rem;
     width: 100%;
     
     display: flex;
@@ -9,46 +9,104 @@
     top: 0;
     left: 0;
     justify-content: space-between;
-    padding: 10px 0px;
-    background-color: black;
-    border-bottom: 0.5px solid white;
+    padding: $padding-medium 0px;
+    background-color: $white;
+    border-bottom: 0.5px solid $vanilla;
 
+    @media screen and (min-width: $media-breakpoint-medium){
+        height: 5rem;
+    }
 }
 
 .p-C-logo_span{
-    text-align: right;
+    text-align: left;
     width: 20%;
     height: auto;
+    margin-left: 2.5rem;
 
     .p-C-logo_img{
-        height: 4.5rem;
-        width: 4.5rem;
+        height: 3.1rem;
+        width: auto;
+
+        @media screen and (min-width: $media-breakpoint-small){
+            height: 3.8rem;
+            width: auto;
+        }
     }
 }
 
 .p-C-navBar{
     width: 55%;
-    height: 4.5rem;
-    padding-top: 25px;
+    height: auto;
+    padding-top: $padding-large;
 
+    @media screen and (min-width: $media-breakpoint-extrasmall){
+        width: 50%;
+    }
+
+    @media screen and (min-width: $media-breakpoint-small){
+        width: 48%;
+    }
+
+    @media screen and (min-width: $media-breakpoint-medium){
+        width: 40%;
+    }
+
+    @media screen and (min-width: $media-breakpoint-large){
+        width: 38%;
+    }
+
+    @media screen and (min-width: $media-breakpoint-extralarge){
+        width: 30%;
+    }
     span{
         display: inline-block;
-        height: 3rem;
+        height: auto;
         width: auto;
-        margin: 0px 5px;
-        
-        a{
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
+        margin: 0px $margin-extrasmall;
 
-            &:hover{
-                color: red;
+        @media screen and (min-width: $media-breakpoint-small){
+            padding: 0px $padding-medium;
+        }
+
+        @media screen and (min-width: $media-breakpoint-large){
+            padding: 0px $padding-medium;
+        }
+
+        a{
+            display: block;
+            font-size: 12px;
+            color: $teal;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: $font-family;
+            font-weight: 500;
+            margin-bottom: $margin-medium;
+
+            @media screen and (min-width: $media-breakpoint-extrasmall){
+                font-size: 15.5px;
+            }
+
+            @media screen and (min-width: $media-breakpoint-small){
+                font-size: 17.5px;
+            }
+
+            @media screen and (min-width: $media-breakpoint-medium) and (orientation: landscape){
+                font-size: 16.5px;
             }
         }
 
         &:hover{
-            border-bottom: 1px solid red;
+            border-bottom: 2px solid $vanilla;
+            animation: border-animation 1s linear;
         }
+    }
+}
+
+@keyframes border-animation {
+    from{
+        color: transparent;
+    }to{
+        color: $teal;
     }
 }

@@ -1,0 +1,13 @@
+.p-C-projects{
+    min-height: 70vh;
+    padding-top: $padding-large;
+    background-color: $teal;
+
+    h3{
+        color: $vanilla !important;
+    }
+
+    ul{
+        padding: $padding-large 0px;
+    }
+}

@@ -1,86 +1,90 @@
 .p-C-about_wrapper{
-    height: auto;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+    background-color: $white;
 
-    padding: 0rem 0rem;
-    background-color: white;
+    @media only screen and (min-width: $media-breakpoint-large) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
 
     .p-C-about_img_wrapper{
-        margin-top: 6rem;
+        position: relative;
         display: block;
-        height: 280px;
-        width: 100%;
+        height: 407px;
+        width: 75%;
         overflow: hidden;
+        margin: $margin-extralarge auto;  
 
-        .overlay{
-            position: absolute;
-            z-index: 2;
-            top: 6rem;
-            left: 0; 
-            height: 238px;
-            width: 100%;
-            background-color: rgba(0,0,0,0.2);
+        @media screen and (min-width: $media-breakpoint-small){
+            height: 450px;
+            width: 60%;
         }
-        
+
+        @media screen and (min-width: $media-breakpoint-medium){
+            height: 580px;
+            width: 60%;
+
+            @media (orientation: landscape){
+                width: 50%;
+                height: 480px;
+            }
+        }
+
+        @media screen and (min-width: $media-breakpoint-large){
+            height: 680px;
+            width: 60%;
+        }
+
+        @media screen and (min-width: $media-breakpoint-large){
+            display: inline-block;
+            height: 350px;
+            width: 30%;
+        }
+
+        @media screen and (min-width: $media-breakpoint-extralarge){
+            display: inline-block;
+            height: 350px;
+            width: 25%;
+        }
+            
         img{
-            position: relative;
-            z-index: 0;
-            width: 100%;
-        }
-
-        h1{
-            position: absolute;
-            top: 15%;
-            left: 45%;
             display: block;
-            height: 3rem;
-            width: 11.5rem;
-            padding: 10px;
-            z-index: 3;
-
-            border-radius: 9px;
-            border: 1px solid white;
-            text-transform: uppercase;
-            font-size: 1.8rem;
-            color: white;
-
+            position: relative;
+            width: 100%;
         }
     }
 
     .p-C-about_text{
         display: block;
-        background-color:white; 
         width: 90%;
-        margin: auto;
+        margin: $margin-medium auto;
+        text-align: center;
 
-        h2{
-            display: block;
-            width: 100%;
-
-            text-align: center;
-            text-transform: uppercase;
-            
-            font-size: 1.3rem;
-            line-height: 1.9rem;
-
-            color: $darkgrey;
+        @media screen and (min-width: $media-breakpoint-large){
+            text-align: left;
+            display: inline-block;
+            width: 50%;
         }
 
         p{
-            width: 90%;
             display: block;
-            margin: 1.8rem auto;
-            text-align: center;
-            line-height: 1.8rem;
+            margin: $margin-small 0px;
             color: $darkgrey;
-        }
+            letter-spacing: 1.3px;
 
-        img{
-            display: block;
-            width: 90%;
-            margin: 1rem auto;
+            @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
+                margin: $margin-medium 0px;
+            }
+        }
+    }
+    
+    a{
+        margin: $margin-large auto;
+        display: block;
+        text-decoration: none;
+
+        @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
+            margin: $margin-large 0px;
         }
     }
 }

@@ -9,13 +9,17 @@ export default function ProjectCard (props){
     
     return(
         <div className="p-C-projectCard_wrapper">
-            <h2>{name}</h2>
+            <div className="p-C-projectCard_img_container">
+                <img src={imgPath} alt={name + ' project'} />
+            </div> 
+            <span className="p-C-projectCard_info_container">
+                <h4>{name}</h4>
 
-            <img src={imgPath} alt={name + ' project'} />
-            <p>{description}</p>
-            <span>
-                <a className={siteLink==='' ? 'disabled' : siteLink} href={siteLink}>Live Site</a>
-                <a href={gitLink}>Learn More</a>
+                <p>{description}</p>
+                <span>
+                    <a className={siteLink==='' ? 'p-L-section_button disabled' : 'p-L-section_button'} href={siteLink}>Live Site</a>
+                    <a className='p-L-section_button' href={gitLink}>Learn More</a>
+                </span>
             </span>
         </div>
     )

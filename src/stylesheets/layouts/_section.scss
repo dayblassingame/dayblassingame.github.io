@@ -1,0 +1,94 @@
+.p-L-section_wrapper{
+    background-color: $white;
+    height: auto;
+    min-height: 70vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: $header-height 0px;
+
+    .p-L-section_h3{
+        height: auto;
+        width: auto;
+        padding: $padding-medium 0px;
+
+        text-align: center;
+        font-weight: 400;
+        color: $teal;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        word-spacing: 3px;
+    }
+
+    .p-L-section_button{
+            height: auto;
+            width: fit-content;
+            padding: $padding-medium $padding-large;
+
+            font-size: $font-size-small;
+            font-family: $font-family;
+            font-weight: 300;
+            background-color: $vanilla;
+            color: $teal;
+
+            border: 1px solid $teal;
+            border-radius: 40px;
+
+            transition:0.25s;
+            cursor: pointer;
+
+            &:hover{
+                color: $vanilla;
+                // background-color: transparent;
+                border: 1px solid $vanilla;
+                --hover: #{adjust-hue($teal, 0deg)};
+                box-shadow: inset 15.5em 0 0 0 var(--hover);
+            }
+
+            @media screen and (min-width: $media-breakpoint-extrasmall){
+                font-size: 1.7rem;
+            }
+
+            @media screen and (min-width: $media-breakpoint-small){
+                font-size: 2rem;
+            }
+
+            @media screen and (min-width: $media-breakpoint-medium){
+                font-size: 2.3rem;
+            }
+
+            @media screen and (min-width: $media-breakpoint-large){
+                font-size: 1.9rem;
+                padding: $padding-small $padding-large;
+
+            }
+
+        }
+
+}
+
+.p-L-heading_border{
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent, $teal, transparent);
+    border-image-slice: 1;
+    width: 40%;
+    margin: $margin-large auto;
+
+    @media screen and (min-width: $media-breakpoint-large){
+        margin: $margin-large $margin-extralarge;
+        width: 20%;
+    }
+}
+
+.p-L-heading_border_vanilla{
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(to right, transparent, $vanilla, transparent);
+    border-image-slice: 1;
+    width: 40%;
+    margin: $margin-large auto;
+
+    @media screen and (min-width: $media-breakpoint-large){
+        margin: $margin-large $margin-extralarge;
+        width: 20%;
+    }
+}

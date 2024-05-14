@@ -4,12 +4,16 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth !important;
+}
+
 body{
     display: block;
     width: 100vw;
     height: auto;
-    padding: 2.5px;
-    background-color: black;
+    background-color: $white;
+
 }
 
 @media (prefers-reduced-motion: reduce) {
