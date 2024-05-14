@@ -1,22 +1,75 @@
 .p-C-hero_container{
-    height: 70vh;
+    height: 100vh;
     width: 100%;
     display: block;
-    background-color: transparent;
+    background-color: $teal;
+
+    @media screen and (min-width: $media-breakpoint-small) and (orientation: landscape){
+        height: 110vh;
+    }
+
 
     .p-C-hero_introContainer{
         height: auto;
         width: 90%;
         display: block;
-        margin: 50% 0px;
-        padding-left: $margin-large; 
+        margin: 50% auto;
+
+        @media screen and (min-width: $media-breakpoint-extrasmall){
+            margin: 35% 0px;
+            padding-left: 2%;
+        }
+
+        @media screen and (min-width: $media-breakpoint-small){
+            margin: 30% 0px;
+            padding-left: 5%;
+
+            @media (orientation: landscape){
+                margin: 10% 0px;
+            }
+        }
+
+        @media screen and (min-width: $media-breakpoint-medium){
+            margin: 40% 0px;
+            text-align: center;
+
+            @media screen and (orientation: landscape){
+                margin: 10% 0px;
+            }
+        }
+
+        @media screen and (min-width: $media-breakpoint-large){
+            margin: 40% 0px;
+            text-align: center;
+
+            @media screen and (orientation: landscape){
+                margin: 12% 0px;
+            }
+        }
+
+        @media screen and (min-width: $media-breakpoint-extralarge){
+            margin: 40% 0px;
+            text-align: center;
+
+            @media screen and (orientation: landscape){
+                margin: 10% 0px;
+            }
+        }
+
+       
+
 
         h1{
-            text-align: left;
             height: auto;
             color: $white;
             margin: $margin-medium 0px;
             white-space: pre-wrap;
+            text-transform: uppercase;
+
+            @media screen and (min-width: $media-breakpoint-medium){
+                white-space: nowrap;
+            }
+            
         }
 
         h3{
@@ -24,21 +77,34 @@
             font-weight: 350;
             margin: $margin-medium 0px;
 
-            animation: fade-in 5s 0s;
+            animation: fade-in 5.5s 0s;
+
+            @media screen and (min-width: $media-breakpoint-small) and (orientation: landscape){
+                margin: $margin-extrasmall auto;
+            }
+
+            @media screen and (min-width: $media-breakpoint-medium){
+                margin: $margin-large auto;
+            }
         }
 
         h4{
             color: $vanilla;
             animation: fade-in 1s 0s;
+
+            @media screen and (min-width: $media-breakpoint-medium){
+                margin: $margin-extralarge auto;
+            }
         }
     
 
         a{
             text-decoration: none;
-        }
+            animation: fade-in 7s 0s;
 
-        button{
-            animation: fade-in 6.5s 0s;
+            @media screen and (min-width: $media-breakpoint-medium){
+                margin: $margin-large auto;
+            }
         }
 
     }

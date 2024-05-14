@@ -12,12 +12,14 @@ export default function ProjectCard (props){
             <div className="p-C-projectCard_img_container">
                 <img src={imgPath} alt={name + ' project'} />
             </div> 
-            <h4>{name}</h4>
+            <span className="p-C-projectCard_info_container">
+                <h4>{name}</h4>
 
-            <p>{description}</p>
-            <span>
-                <button className={siteLink==='' ? 'disabled' : ''} href={siteLink}>Live Site</button>
-                <button href={gitLink}>Learn More</button>
+                <p>{description}</p>
+                <span>
+                    <a className={siteLink==='' ? 'p-L-section_button disabled' : 'p-L-section_button'} href={siteLink}>Live Site</a>
+                    <a className='p-L-section_button' href={gitLink}>Learn More</a>
+                </span>
             </span>
         </div>
     )

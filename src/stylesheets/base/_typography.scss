@@ -1,14 +1,14 @@
 //font variables
 $font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-$font-size-extralarge: 2.8rem;
-$font-size-large: 2.2rem;
+$font-size-extralarge: 3rem;
+$font-size-large: 2.5rem;
 $font-size-medium: 1.7rem;
-$font-size-small: 1.3rem;
-$font-size-extrasmall: 0.9rem;
+$font-size-small: 1.4rem;
+$font-size-extrasmall: 1rem;
 
 //line-height variables
-$line-height-extralarge: 3.2rem;
-$line-height-large: 2.6rem;
+$line-height-extralarge: 3.5rem;
+$line-height-large: 2.8rem;
 $line-height-medium: 2.1rem;
 $line-height-small: 1.8rem;
 $line-height-extrasmall: 1.2rem;
@@ -28,11 +28,38 @@ $margin-small: 9px;
 $margin-extrasmall: 5px;
 $margin-section: 4rem;
 
+//media breakpoints
+$media-breakpoint-extralarge: 1200px;
+$media-breakpoint-large: 992px;
+$media-breakpoint-medium: 768px;
+$media-breakpoint-small: 600px;
+$media-breakpoint-extrasmall: 460px;
+
 h1{
     font-family: $font-family;
     font-size: $font-size-extralarge;
     line-height: $line-height-extralarge;
     font-weight: 600;
+
+    @media only screen and (min-width: $media-breakpoint-extrasmall){
+        font-size: 4rem;
+        line-height: 4.3rem;
+    }
+
+    @media only screen and (min-width: $media-breakpoint-small){
+        font-size: 4rem;
+        line-height: 4.4rem;
+    }
+
+    @media only screen and (min-width: $media-breakpoint-medium){
+        font-size: 5.0rem;
+        line-height: 5.3rem;
+    }
+
+    @media screen and (min-width: $media-breakpoint-extralarge){
+        font-size: 5.3rem;
+        line-height: 5.7rem;
+    }
 }
 
 h2{
@@ -40,28 +67,105 @@ h2{
     font-size: $font-size-large;
     line-height: $line-height-large;
     font-weight: 600;
+
+    @media only screen and (min-width: $media-breakpoint-extrasmall){
+        font-size: $font-size-extralarge;
+        line-height: $line-height-extralarge;
+    }
+
+    @media only screen and (min-width: $media-breakpoint-small){
+        font-size: 3.6rem;
+        line-height: 4rem;
+    }
+
+    @media only screen and (min-width: $media-breakpoint-medium){
+        font-size: 4rem;
+        line-height: 4.4rem;
+    }
+
+    @media screen and (min-width: $media-breakpoint-extralarge){
+        font-size: 4.7rem;
+        line-height: 4.9rem;
+    }
 }
 
 h3{
     font-family: $font-family;
-    font-size: $font-size-medium;
-    line-height: $line-height-medium;
+    font-size: 2.1rem;
+    line-height: 2.5rem;
 
+    @media only screen and (min-width: $media-breakpoint-extrasmall){
+        font-size:2.4rem;
+        line-height: 2.8rem;
+    }
+
+    @media only screen and (min-width: $media-breakpoint-small){
+        font-size: 2.4rem;
+        line-height: 2.7rem;
+    }
+
+    @media only screen and (min-width: $media-breakpoint-medium){
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+    @media screen and (min-width: $media-breakpoint-extralarge){
+        font-size: 2.6rem;
+        line-height: 3.0rem;
+    }
 }
 
 h4{
     font-family: $font-family;
-    font-size: $font-size-small;
-    line-height: $line-height-small;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
 
+    @media only screen and (min-width: $media-breakpoint-extrasmall){
+        font-size: 1.7rem;
+        line-height: 2.1rem;
+    }
+
+    @media only screen and (min-width: $media-breakpoint-small){
+        font-size: 1.9rem;
+        line-height: 2.2rem;
+    }
+
+    @media only screen and (min-width: $media-breakpoint-large){
+        font-size: 2.5rem;
+        line-height: 2.9rem;
+    }
+
+    @media screen and (min-width: $media-breakpoint-extralarge){
+        margin-bottom: $margin-extralarge;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+    }
 }
 
 p{
     font-family: $font-family;
     font-size: $font-size-extrasmall;
     line-height: $line-height-extrasmall;
+
+    @media only screen and (min-width: $media-breakpoint-small){
+        font-size: $font-size-extrasmall;
+        line-height: $line-height-extrasmall;
+    }
+
+    @media only screen and (min-width: $media-breakpoint-medium){
+        font-size: $font-size-small;
+        line-height: $line-height-medium;
+
+    }
+
+    @media only screen and (min-width: $media-breakpoint-medium) and (orientation: landscape){
+        font-size: $font-size-extrasmall;
+        line-height: $line-height-small;
+    }
+
 }
 
 //header-height variable
-$header-height: 4.2rem;
+$header-height: 4.4rem;
 

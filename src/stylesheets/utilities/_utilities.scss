@@ -14,9 +14,9 @@
     background-color: $overlay;
     position: absolute;
     z-index: 0;
-    height: 100%;
+    height: inherit;
     width: 100%;
-    top: 0;
+    top: $header-height;
     left: 0;
 }
 

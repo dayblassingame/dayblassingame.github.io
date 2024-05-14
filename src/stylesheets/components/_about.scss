@@ -1,13 +1,51 @@
 .p-C-about_wrapper{
     background-color: $white;
 
+    @media only screen and (min-width: $media-breakpoint-large) {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-evenly;
+    }
+
     .p-C-about_img_wrapper{
         position: relative;
         display: block;
-        height: 387px;
-        width: 85%;
+        height: 407px;
+        width: 75%;
         overflow: hidden;
-        margin: $margin-large auto;  
+        margin: $margin-extralarge auto;  
+
+        @media screen and (min-width: $media-breakpoint-small){
+            height: 450px;
+            width: 60%;
+        }
+
+        @media screen and (min-width: $media-breakpoint-medium){
+            height: 580px;
+            width: 60%;
+
+            @media (orientation: landscape){
+                width: 50%;
+                height: 480px;
+            }
+        }
+
+        @media screen and (min-width: $media-breakpoint-large){
+            height: 680px;
+            width: 60%;
+        }
+
+        @media screen and (min-width: $media-breakpoint-large){
+            display: inline-block;
+            height: 350px;
+            width: 30%;
+        }
+
+        @media screen and (min-width: $media-breakpoint-extralarge){
+            display: inline-block;
+            height: 350px;
+            width: 25%;
+        }
             
         img{
             display: block;
@@ -20,18 +58,33 @@
         display: block;
         width: 90%;
         margin: $margin-medium auto;
+        text-align: center;
+
+        @media screen and (min-width: $media-breakpoint-large){
+            text-align: left;
+            display: inline-block;
+            width: 50%;
+        }
 
         p{
             display: block;
             margin: $margin-small 0px;
-            text-align: center;
             color: $darkgrey;
             letter-spacing: 1.3px;
+
+            @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
+                margin: $margin-medium 0px;
+            }
         }
     }
     
-    button{
+    a{
         margin: $margin-large auto;
         display: block;
+        text-decoration: none;
+
+        @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
+            margin: $margin-large 0px;
+        }
     }
 }

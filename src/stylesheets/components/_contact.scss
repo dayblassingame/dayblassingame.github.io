@@ -2,6 +2,15 @@
     padding: $padding-extralarge 0rem;
     width: 100vw;
     background-color: $white;
+    margin: auto;
+    
+    @media screen and (min-width: $media-breakpoint-large){
+        width: 60vw;
+    }
+
+    .p-L-contact_heading{
+        margin: $margin-medium auto;
+    }
 
     p{
         display: block;
@@ -11,6 +20,8 @@
         text-align: center;
         color: $darkgrey;
     }
+
+    
 
     form{
         display: grid;
@@ -61,6 +72,19 @@
             margin: $margin-small auto;
             width: 50%;
             text-transform: uppercase;
+
+            &:hover{
+                border: 1px solid $teal;
+                color: $teal;
+            }
+
+            &:hover{
+                color: $vanilla;
+                // background-color: transparent;
+                border: 1px solid $vanilla;
+                --hover: #{adjust-hue($teal, 0deg)};
+                box-shadow: inset 15.5em 0 0 0 var(--hover);
+            }
         
         }
 

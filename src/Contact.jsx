@@ -56,7 +56,7 @@ export default function Contact(){
     return(
         <div id='contact' className="p-L-section_wrapper">
             <div  className="p-C-contact">
-                <div className="p-L-heading_border">
+                <div className="p-L-heading_border p-L-contact_heading">
                     <h3 className='p-L-section_h3'>Contact</h3>
                 </div>
                 <p>Need a well constructed, responsive webpage. Leave me a message!</p>
@@ -66,7 +66,7 @@ export default function Contact(){
                     <input required type="email" id='email' placeholder="Email" autoComplete="off" value={newMessage.email} onChange={data}/>
                     <input required type="text" id='subject' placeholder="Subject" autoComplete="off" value={newMessage.subject} onChange={data}/>
                     <textarea id='message' placeholder="Message" autoComplete="off" value={newMessage.message} onChange={data}/>
-                    <button type="submit" value='SEND'>submit</button>
+                    <button className="p-L-section_button" type="submit" value='SEND'>submit</button>
                     <p className={messageStatus==='message failed' ? 'red': 'green'} id='messageStatus'>{messageStatus}</p>
 
                 </form>

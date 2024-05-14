@@ -43,17 +43,19 @@ export default function Hero(){
 
     return(
         <div id='hero' className="p-L-section_wrapper p-C-background_teal">
-            <span className="overlay"/>
             <div className="p-C-hero_container">
-                <span className="p-C-hero_introContainer">
-                    <h4>Hi, I'm</h4>
-                    <h1 id='intro'></h1>
-                    <h3>Front End Developer</h3>
-                    <a href="#about">
-                        <button> Learn more</button>
-                    </a>    
+                <span className="overlay">
+                    <span className="p-C-hero_introContainer">
+                        <h4>Hi, I'm</h4>
+                        <h1 id='intro'></h1>
+                        <h3>Front End Developer</h3> 
+                        <a className='p-L-section_button' href="#about">
+                            Learn More
+                        </a>    
+                    </span>
                 </span>
-            </div>
+            </div>            
+
         </div>
     );
 }

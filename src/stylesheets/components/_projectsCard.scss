@@ -6,45 +6,66 @@
     padding: $padding-large auto;
     text-align: center;
 
+    @media screen and (min-width: $media-breakpoint-large){
+        display: flex;
+        flex-direction: row;
+    }
+
     .p-C-projectCard_img_container{
         display: block;
         width: 90%;
         margin: auto;
 
+        @media screen and (min-width: $media-breakpoint-large){
+            width: 55%;
+        }
         img{
             width: 100%;
             display: block;
         }
     }
-    
-    h4{
-        display: block;
-        color: $white;
-        margin: $margin-medium;
-    }
 
-    p{
-        color: $white;
-        margin: $padding-medium 0rem;
-    }
+    .p-C-projectCard_info_container{
+         width: 100%;
 
-    span{
-        display: block;
-        margin: $margin-medium $margin-medium;
-
-        button{
-            font-size: $font-size-extrasmall;
-            margin: $margin-small $margin-small;
+        @media screen and (min-width: $media-breakpoint-large){
+            width: 50%;
+            text-align: left;
         }
 
-        .disabled{
-            pointer-events: none;
-            cursor: not-allowed;
-            background-color: $overlay;
+        h4{
+            display: block;
             color: $white;
-            border-color: $teal;
+            margin: $margin-large 0px;
         }
+    
+        p{
+            color: $white;
+            margin: $padding-medium 0rem;
+        }
+    
+        span{
+            display: block;
+            margin: $margin-medium 0px;
+    
+            a{
+                text-decoration: none;
+                display: inline-block;
+                margin: $margin-small $margin-small;
 
+                @media screen and (min-width: $media-breakpoint-large){
+                    display: block;
+                }
+            }
+    
+            .disabled{
+                pointer-events: none;
+                cursor: not-allowed;
+                background-color: $overlay;
+                color: $white;
+                border-color: $teal;
+            }
+        }    
     }
     
 }
