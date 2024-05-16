@@ -69,6 +69,10 @@
             @media screen and (min-width: $media-breakpoint-medium){
                 white-space: nowrap;
             }
+
+            @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
+                margin: $margin-small;
+            }
             
         }
 
@@ -86,6 +90,11 @@
             @media screen and (min-width: $media-breakpoint-medium){
                 margin: $margin-large auto;
             }
+
+            @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
+                margin: $margin-small auto;
+                padding-bottom: $padding-large;
+            }
         }
 
         h4{
@@ -94,6 +103,11 @@
 
             @media screen and (min-width: $media-breakpoint-medium){
                 margin: $margin-extralarge auto;
+            }
+
+            @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
+                margin: $margin-small auto;
+
             }
         }
     
@@ -105,6 +119,7 @@
             @media screen and (min-width: $media-breakpoint-medium){
                 margin: $margin-large auto;
             }
+
         }
 
     }
