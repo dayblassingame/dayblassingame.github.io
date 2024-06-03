@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/dayblassingame/dayblassingame.github.io/issues"
   },
-  "homepage": "https://github.com/dayblassingame/dayblassingame.github.io",
+  "homepage": "https://dayblassingame.github.io",
   "devDependencies": {
     "@babel/cli": "^7.23.9",
     "@babel/core": "^7.23.9",
