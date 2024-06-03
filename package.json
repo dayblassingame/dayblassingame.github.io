@@ -6,6 +6,7 @@
   "scripts": {
     "start": "webpack serve --open --mode development",
     "test": "jest --watch --coverage",
+    "build": "webpack --config webpack.config.js",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
