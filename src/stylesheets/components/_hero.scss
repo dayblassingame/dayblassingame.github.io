@@ -66,12 +66,13 @@
             white-space: pre-wrap;
             text-transform: uppercase;
 
-            @media screen and (min-width: $media-breakpoint-medium){
+            @media screen and (min-width: $media-breakpoint-small) and (orientation: landscape){
                 white-space: nowrap;
+                margin: $margin-small 0px;
             }
 
-            @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
-                margin: $margin-small;
+            @media screen and (min-width: $media-breakpoint-large){
+                margin: $margin-large 0px;
             }
             
         }
@@ -83,15 +84,8 @@
 
             animation: fade-in 5.5s 0s;
 
-            @media screen and (min-width: $media-breakpoint-small) and (orientation: landscape){
-                margin: $margin-extrasmall auto;
-            }
 
-            @media screen and (min-width: $media-breakpoint-medium){
-                margin: $margin-large auto;
-            }
-
-            @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
+            @media screen and (min-width: $media-breakpoint-large){
                 margin: $margin-small auto;
                 padding-bottom: $padding-large;
             }
@@ -101,11 +95,7 @@
             color: $vanilla;
             animation: fade-in 1s 0s;
 
-            @media screen and (min-width: $media-breakpoint-medium){
-                margin: $margin-extralarge auto;
-            }
-
-            @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
+            @media screen and (min-width: $media-breakpoint-large){
                 margin: $margin-small auto;
 
             }
@@ -116,9 +106,6 @@
             text-decoration: none;
             animation: fade-in 7s 0s;
 
-            @media screen and (min-width: $media-breakpoint-medium){
-                margin: $margin-large auto;
-            }
 
         }
 

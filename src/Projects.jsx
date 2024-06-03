@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectsCard";
-import CapableTMdesktop from './images/CapableTM.png';
+import CraftedCocktails from './images/CraftedCocktails.png';
 
 export default function Projects(){
 
@@ -8,15 +8,18 @@ export default function Projects(){
         <div className='p-L-section_wrapper p-C-background_teal' id='projects'>
                 <div className='p-C-projects'>
                     <div className="p-L-heading_border_vanilla">
-                        <h3 className='p-L-section_h3'> Projects</h3>
+                        <h4 className='p-L-section_h4'> /projects</h4>
+                        <p>A collection of my best work.</p>
                     </div>
                     <ul>
                         <ProjectCard
-                            name='CapableTM'
-                            imgPath={CapableTMdesktop}
-                            description='CapableTM is a kaban board constructed with ReactJS, Node.JS, and Sass technologies.'
+                            name='Crafted Cocktails'
+                            imgPath={CraftedCocktails}
+                            description= {'The cocktail website aims to provide an extensive collection of cocktail recipes, mixology tips, and related information.'
+                            + 'The website is designed to be visually appealing, user-friendly, and accessible on various devices.' + 
+                            'It features a robust search functionality, categorization of recipes, user accounts, and social media integration.'}
                             siteLink=''
-                            gitLink='https://github.com/dayblassingame/CapableTM'
+                            gitLink=''
                         />
                     </ul>
                 </div>

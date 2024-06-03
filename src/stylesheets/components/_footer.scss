@@ -1,9 +1,7 @@
 .p-C-footer_wrapper{
-    background-color: $vanilla;
+    background-color: $teal;
     display: block;
-    width: 100%;
-    height: auto;
-    padding: $padding-extralarge auto;
+    width: 100vw;
     border-top: 1px solid $teal;
     overflow: hidden;
 
@@ -11,7 +9,7 @@
         display: block;
         text-align: center;
         margin: 10px 0px;
-        color: $teal;
+        color: $vanilla;
         font-weight: 400;
         text-transform: uppercase;
     }
@@ -22,14 +20,13 @@
         width: 100%;
 
         a{
-            color: $darkgrey;
+            color: $white;
             font-size: $font-size-extrasmall;
             text-decoration: none;
 
             &:hover{
-                color: $teal;
                 text-decoration: underline;
-                text-decoration-color: $teal;
+                text-decoration-color: $white;
             }
         }
     }
@@ -42,12 +39,12 @@
 
         a{
             text-decoration: none;
-            color: $darkgrey;
+            color: $white;
 
             &:hover{
-                color: white;
+                color: $white;
                 text-decoration: underline;
-                text-decoration-color: white;
+                text-decoration-color: $white;
             }
 
         }
@@ -55,7 +52,7 @@
         p{
             display: block;
             margin: 0;
-            color: darkgrey;
+            color: $white;
         }
     }
     

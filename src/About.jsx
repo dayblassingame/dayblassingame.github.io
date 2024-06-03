@@ -20,12 +20,12 @@ export default function About(){
     return(
         <div id='about' className="p-L-section_wrapper">
             <div className="p-L-heading_border">
-                <h3 className='p-L-section_h3'> About</h3>
+                <h4 className='p-L-section_h4'> /about</h4>
             </div>
             <div className='p-C-about_wrapper'> 
                 
                 <div className="p-C-about_img_wrapper">
-                    <img src={bio.imgSrc} alt="Day Blassingame Image"/>
+                    <img src={bio.imgSrc} alt="Day Blassingame Portrait"/>
                 </div>
                 
                 <span className="p-C-about_text">

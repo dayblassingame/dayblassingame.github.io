@@ -57,7 +57,7 @@ export default function Contact(){
         <div id='contact' className="p-L-section_wrapper">
             <div  className="p-C-contact">
                 <div className="p-L-heading_border p-L-contact_heading">
-                    <h3 className='p-L-section_h3'>Contact</h3>
+                    <h4 className='p-L-section_h4'>/contact</h4>
                 </div>
                 <p>Need a well constructed, responsive webpage. Leave me a message!</p>
 

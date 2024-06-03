@@ -2,13 +2,13 @@
     display: block;
     height: auto;
     width: 90%;
-    margin: $margin-large auto;
-    padding: $padding-large auto;
+    margin: $margin-small auto;
     text-align: center;
 
     @media screen and (min-width: $media-breakpoint-large){
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
 
     .p-C-projectCard_img_container{
@@ -17,8 +17,9 @@
         margin: auto;
 
         @media screen and (min-width: $media-breakpoint-large){
-            width: 55%;
+            width: 35%;
         }
+
         img{
             width: 100%;
             display: block;
@@ -29,18 +30,22 @@
          width: 100%;
 
         @media screen and (min-width: $media-breakpoint-large){
-            width: 50%;
-            text-align: left;
+            width: 60%;
+            text-align: center;
+            margin-top: $margin-extralarge;
         }
 
-        h4{
+        h3{
             display: block;
-            color: $white;
+            color: $teal;
             margin: $margin-large 0px;
+            font-weight: 600;
+            font-family:'Courier New', Courier, monospace;
+
         }
     
         p{
-            color: $white;
+            color: $darkgrey;
             margin: $padding-medium 0rem;
         }
     
@@ -52,17 +57,13 @@
                 text-decoration: none;
                 display: inline-block;
                 margin: $margin-small $margin-small;
-
-                @media screen and (min-width: $media-breakpoint-large){
-                    display: block;
-                }
             }
     
             .disabled{
                 pointer-events: none;
                 cursor: not-allowed;
                 background-color: $overlay;
-                color: $white;
+                color: $black;
                 border-color: $teal;
             }
         }    
