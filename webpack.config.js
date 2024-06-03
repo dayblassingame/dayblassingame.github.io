@@ -40,8 +40,8 @@ module.exports = {
         path: path.resolve(__dirname, './src'),
         filename: 'bundle.js',
     },
-    devServer: {
-        port: 7770,
-        hot: true,
-    },
+    // devServer: {
+    //     port: 7770,
+    //     hot: true,
+    // },
 };
