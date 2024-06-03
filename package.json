@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://https://github.com/dayblassingame/dayblassingame.github.io.git"
+    "url": "git+https://github.com/dayblassingame/dayblassingame.github.io.git"
   },
   "author": "Day Blassingame",
   "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/dayblassingame/dayblassingame.github.io/issues"
   },
-  "homepage": "https://https://github.com/dayblassingame/dayblassingame.github.io",
+  "homepage": "https://github.com/dayblassingame/dayblassingame.github.io",
   "devDependencies": {
     "@babel/cli": "^7.23.9",
     "@babel/core": "^7.23.9",
