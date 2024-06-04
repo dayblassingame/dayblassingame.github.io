@@ -1,17 +1,14 @@
 const path = require('path');
+const webpack = require('webpack')
+
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
     mode: "production",
     entry: path.resolve(__dirname, './index.js'),
-    devtool: "eval-source-map",
-    plugins: [
-        new MiniCssExtractPlugin(),
-        new HtmlWebpackPlugin({
-            title: 'Production',
-          }),],
+    devtool: "source-map",
     module: {
         rules: [
             {
@@ -44,12 +41,18 @@ module.exports = {
     resolve: {
         extensions: ['*', '.js', '.jsx']
     },
+    plugins: [
+        new MiniCssExtractPlugin(),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            inject: true,
+            template: path.resolve(__dirname, './index.html'),
+          }),
+        new CleanWebpackPlugin()
+    ],
     output: {
-        path: path.resolve(__dirname, './src'),
+        path: path.resolve(__dirname, './build'),
         filename: 'bundle.js',
+        clean: true
     },
-    // devServer: {
-    //     port: 7770,
-    //     hot: true,
-    // },
 };
