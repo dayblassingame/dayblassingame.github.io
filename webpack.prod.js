@@ -55,8 +55,4 @@ module.exports = {
         filename: 'bundle.js',
         clean: true
     },
-    // devServer: {
-    //     port: 7770,
-    //     hot: true,
-    // },
 };
