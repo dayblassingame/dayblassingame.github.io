@@ -15,7 +15,7 @@ export default function Projects(){
                         <ProjectCard
                             name='Crafted Cocktails'
                             imgPath={CraftedCocktails}
-                            description= {'Crafted Cocktails is a web app that aims to transform an extensive collection of cocktail recipes'
+                            description= {'Crafted Cocktails is a web application that aims to transform an extensive collection of cocktail recipes'
                             + 'into a visually appealing, user-friendly, accessible interface.' + 
                             'It features a robust search functionality, categorization of recipes, Thecocktaildb.com api intergration constructed using ReactJS, Sass, JS, and HTML'}
                             siteLink=''

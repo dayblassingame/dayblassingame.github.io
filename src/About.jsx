@@ -34,7 +34,7 @@ export default function About(){
                     <p>{bio.p3}</p>
                     <p>{bio.p4}</p>
 
-                    <a className="p-L-section_button" href={CV}>Download CV</a>
+                    <a className="p-L-section_button" href={CV} target="_blank">Download CV</a>
                 </span>
             </div>
         </div>
