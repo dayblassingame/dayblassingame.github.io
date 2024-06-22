@@ -1,8 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
+import selfImg from './images/aboutImg.jpg';
 
 export default function Hero(){
-    const intro = "Day*Blassingame";
+    const intro = "Dazhia*Blassingame";
     let position = 0;
     let end = intro.length;
     let currentText = '';
@@ -44,16 +45,18 @@ export default function Hero(){
     return(
         <div id='hero' className="p-L-section_wrapper p-C-background_teal">
             <div className="p-C-hero_container">
-                <span className="overlay">
-                    <span className="p-C-hero_introContainer">
-                        <h4>Hi, I'm</h4>
-                        <h1 id='intro'></h1>
-                        <h3>Front End Developer</h3> 
-                        <a className='p-L-section_button' href="#about">
-                            Learn More
-                        </a>    
-                    </span>
+                <div className="p-C-hero_img_wrapper">
+                    <img src={selfImg} alt="Day Blassingame Portrait"/>
+                </div>
+                <span className="p-C-hero_introContainer">
+                    <h4>Hey, I'm</h4>
+                    <h1 id='intro'></h1>
+                    <h3>Front End Engineer</h3> 
+                    <a className='p-L-section_button' href="#about">
+                        Learn More
+                    </a>    
                 </span>
+                <span className="overlay"/>
             </div>            
 
         </div>

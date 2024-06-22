@@ -1,10 +1,8 @@
 import React from "react";
-import AboutImg from './images/aboutImg.jpg';
 import CV from './files/Day-Blassingame-CV.pdf';
 
 export default function About(){
     const bio = {
-        imgSrc: AboutImg,
         p1: "Since beginning my journey into web development in 2018, I have developed a passion for infusing digital landscapes with creativity and innovation. " +
         "I see web development not just as lines of code, but as a canvas where imagination meets functionality. ",
         p2: "Over the years, I've honed my skills in a variety of technologies including ReactJS, CSS & Sass, and beyond. " +
@@ -23,10 +21,6 @@ export default function About(){
                 <h4 className='p-L-section_h4'> /about</h4>
             </div>
             <div className='p-C-about_wrapper'> 
-                
-                <div className="p-C-about_img_wrapper">
-                    <img src={bio.imgSrc} alt="Day Blassingame Portrait"/>
-                </div>
                 
                 <span className="p-C-about_text">
                     <p>{bio.p1}</p>

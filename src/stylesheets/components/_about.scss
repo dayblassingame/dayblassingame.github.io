@@ -7,53 +7,6 @@
         justify-content: space-evenly;
     }
 
-    .p-C-about_img_wrapper{
-        position: relative;
-        display: block;
-        height: 407px;
-        width: 75%;
-        overflow: hidden;
-        margin: $margin-extralarge auto;  
-
-        @media screen and (min-width: $media-breakpoint-small){
-            height: 450px;
-            width: 60%;
-        }
-
-        @media screen and (min-width: $media-breakpoint-medium){
-            height: 580px;
-            width: 60%;
-
-            @media (orientation: landscape){
-                width: 50%;
-                height: 480px;
-            }
-        }
-
-        @media screen and (min-width: $media-breakpoint-large){
-            height: 680px;
-            width: 60%;
-        }
-
-        @media screen and (min-width: $media-breakpoint-large){
-            display: inline-block;
-            height: 350px;
-            width: 30%;
-        }
-
-        @media screen and (min-width: $media-breakpoint-extralarge){
-            display: inline-block;
-            height: 350px;
-            width: 25%;
-        }
-            
-        img{
-            display: block;
-            position: relative;
-            width: 100%;
-        }
-    }
-
     .p-C-about_text{
         display: block;
         width: 90%;

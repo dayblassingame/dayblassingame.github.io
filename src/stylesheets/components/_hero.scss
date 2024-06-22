@@ -1,114 +1,107 @@
 .p-C-hero_container{
-    height: 100vh;
+    height: 550px;
     width: 100%;
     display: block;
     background-color: $teal;
+    padding: $header-height 0px;
 
-    @media screen and (min-width: $media-breakpoint-small) and (orientation: landscape){
-        height: 110vh;
+    @media screen and (min-width: $media-breakpoint-small){
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
     }
 
+    .p-C-hero_img_wrapper{
+        position: relative;
+        display: block;
+        height: 150px;
+        width: 150px;
+        overflow: hidden;
+        float: right;  
+        margin-top: $header-height;
+        margin-right: $margin-medium;
+
+        border-radius: 50%;
+        box-shadow: 5px -5px 15px rgb(0, 46, 46);
+
+        @media screen and (min-width: $media-breakpoint-small){
+            display: inline-block;
+            float: none;
+            margin: 20px auto;
+        }
+
+        @media screen and (min-width: $media-breakpoint-medium){
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            margin-left: $margin-extralarge;
+        }
+            
+        img{
+            display: block;
+            position: relative;
+            width: 100%;
+        }
+    }
 
     .p-C-hero_introContainer{
         height: auto;
         width: 90%;
         display: block;
-        margin: 50% auto;
-
-        @media screen and (min-width: $media-breakpoint-extrasmall){
-            margin: 35% 0px;
-            padding-left: 2%;
-        }
+        margin: auto;
+        margin-top: 120px;
 
         @media screen and (min-width: $media-breakpoint-small){
-            margin: 30% 0px;
-            padding-left: 5%;
-
-            @media (orientation: landscape){
-                margin: 10% 0px;
-            }
+            display: inline-block;
+            width: auto;
+            margin-top: 50px;
+            margin-right: $margin-extralarge;
+            //text-align: center;
         }
 
         @media screen and (min-width: $media-breakpoint-medium){
-            margin: 40% 0px;
-            text-align: center;
-
-            @media screen and (orientation: landscape){
-                margin: 10% 0px;
-            }
+            width: 40%;
+            flex-grow: 0;
         }
 
         @media screen and (min-width: $media-breakpoint-large){
-            margin: 40% 0px;
-            text-align: center;
-
-            @media screen and (orientation: landscape){
-                margin: 12% 0px;
-            }
+            width: 30%;
         }
-
-        @media screen and (min-width: $media-breakpoint-extralarge){
-            margin: 40% 0px;
-            text-align: center;
-
-            @media screen and (orientation: landscape){
-                margin: 10% 0px;
-            }
-        }
-
-       
-
 
         h1{
             height: auto;
             color: $white;
-            margin: $margin-medium 0px;
+            margin: $margin-small 0px;
             white-space: pre-wrap;
-            text-transform: uppercase;
-
-            @media screen and (min-width: $media-breakpoint-small) and (orientation: landscape){
-                white-space: nowrap;
-                margin: $margin-small 0px;
-            }
-
-            @media screen and (min-width: $media-breakpoint-large){
-                margin: $margin-large 0px;
-            }
-            
+            text-transform: uppercase; 
+               
         }
 
         h3{
             color: $white;
             font-weight: 350;
-            margin: $margin-medium 0px;
+            margin: $margin-small 0px;
 
             animation: fade-in 5.5s 0s;
-
-
-            @media screen and (min-width: $media-breakpoint-large){
-                margin: $margin-small auto;
-                padding-bottom: $padding-large;
-            }
         }
 
         h4{
+            display: block;
             color: $vanilla;
             animation: fade-in 1s 0s;
-
-            @media screen and (min-width: $media-breakpoint-large){
-                margin: $margin-small auto;
-
-            }
         }
-    
 
         a{
+            display: block;
             text-decoration: none;
             animation: fade-in 7s 0s;
 
-
+            @media screen and (min-width: $media-breakpoint-medium){
+                width: 65%;
+                text-align: center;
+                margin-top: $margin-medium;
+            }
         }
-
     }
 }
 
