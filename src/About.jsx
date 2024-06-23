@@ -7,7 +7,7 @@ export default function About(){
         summary: "A detail-oriented Frontend Engineer with a knack for creating intuitive and dynamic user experiences.",
         summary1: "With over 2 years of experience in front-end development, I have honed my skills in HTML, CSS, JavaScript, " +
         "and modern libraries and frameworks like React and Angular, building sleek UI components for a high-traffic, streaming company. I enjoy leading front-end projects, mentoring others, and enhancing user experience. "+
-        "When developing front-end solutions, I prioritize accessibility, maintainability, and best practices",
+        "When developing front-end solutions, I prioritize accessibility, maintainability, and best practices.",
         }
 
     const {intro, summary, summary1} = bio;
@@ -21,7 +21,7 @@ export default function About(){
                 <span className="p-C-about_text">
                     <p><b>{intro}</b></p>
                     <p name='biography'>{summary}</p>
-                    <p >{summary1}</p>
+                    <p>{summary1}</p>
                     <span>
                         <a className="p-L-section_button" name='projects' href='#projects'> View Projects</a>
                         <a className="p-L-section_button" name='resume' href={CV} target="_blank">Download CV</a>

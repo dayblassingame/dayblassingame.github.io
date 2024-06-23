@@ -109,8 +109,8 @@ h5{
 
 p{
     font-family: $font-family;
-    font-size: $font-size-extrasmall;
-    line-height: $line-height-extrasmall;
+    font-size: 15px;
+    line-height: 20px;
 
 
     @media only screen and (min-width: $media-breakpoint-medium) and (orientation: portrait){

@@ -2,10 +2,10 @@
     display: block;
     height: auto;
     width: 90%;
-    margin: $margin-small auto;
+    margin: $margin-extralarge auto;
     text-align: center;
 
-    @media screen and (min-width: $media-breakpoint-large){
+    @media screen and (min-width: $media-breakpoint-medium){
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -13,10 +13,10 @@
 
     .p-C-projectCard_img_container{
         display: block;
-        width: 90%;
+        width: 80%;
         margin: auto;
 
-        @media screen and (min-width: $media-breakpoint-large){
+        @media screen and (min-width: $media-breakpoint-medium){
             width: 35%;
         }
 
@@ -45,8 +45,25 @@
         }
     
         p{
+            width: 96%;
             color: $darkgrey;
-            margin: $padding-medium 0rem;
+            margin: $padding-medium auto;
+            text-align: center;
+        }
+
+        ul{
+            list-style: none;
+
+            li{
+                display: inline-block;
+                width: auto;
+                margin: $margin-extrasmall $margin-small;
+                padding: $padding-small $padding-large;
+
+                border-radius: 20px;
+                background-color: $teal;
+                color: $white;
+            }
         }
     
         span{
@@ -63,7 +80,7 @@
                 pointer-events: none;
                 cursor: not-allowed;
                 background-color: $overlay;
-                color: $black;
+                color: $white;
                 border-color: $teal;
             }
         }    
