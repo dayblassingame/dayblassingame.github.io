@@ -44,6 +44,7 @@ export default function Hero(){
 
     return(
         <div id='hero' className="p-L-section_wrapper p-C-background_teal">
+            <span className="overlay"/>
             <div className="p-C-hero_container">
                 <div className="p-C-hero_img_wrapper">
                     <img src={selfImg} alt="Day Blassingame Portrait"/>
@@ -56,7 +57,6 @@ export default function Hero(){
                         Learn More
                     </a>    
                 </span>
-                <span className="overlay"/>
             </div>            
 
         </div>

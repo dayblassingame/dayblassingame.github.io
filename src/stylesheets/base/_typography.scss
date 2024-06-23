@@ -11,7 +11,7 @@ $line-height-extralarge: 3.5rem;
 $line-height-large: 2.8rem;
 $line-height-medium: 2.1rem;
 $line-height-small: 1.8rem;
-$line-height-extrasmall: 1.2rem;
+$line-height-extrasmall: 1.3rem;
 
 //padding variables
 $padding-extralarge: 32px;
@@ -95,10 +95,22 @@ h4{
     }
 }
 
+h5{
+    font-family: $font-family;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+
+    @media only screen and (min-width: $media-breakpoint-small) and (orientation: portrait){
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+}
+
 p{
     font-family: $font-family;
     font-size: $font-size-extrasmall;
-    line-height: $line-height-small;
+    line-height: $line-height-extrasmall;
 
 
     @media only screen and (min-width: $media-breakpoint-medium) and (orientation: portrait){

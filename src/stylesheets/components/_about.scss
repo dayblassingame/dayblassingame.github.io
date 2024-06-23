@@ -9,35 +9,39 @@
 
     .p-C-about_text{
         display: block;
-        width: 90%;
+        width: 95%;
         margin: $margin-medium auto;
-        text-align: center;
+        text-align: left;
 
         @media screen and (min-width: $media-breakpoint-large){
             text-align: left;
             display: inline-block;
-            width: 50%;
+            width: 80%;
         }
 
         p{
             display: block;
-            margin: $margin-small 0px;
+            margin: $margin-large 0px;
+
+            font-size: 15px;
             color: $darkgrey;
-            letter-spacing: 1.3px;
+            letter-spacing: 1px;
 
             @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
                 margin: $margin-medium 0px;
             }
         }
     }
+
     
     a{
-        margin: $margin-large auto;
-        display: block;
+        margin: $margin-large 2px;
+        display: inline-block;
+    
         text-decoration: none;
 
-        @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
-            margin: $margin-large 0px;
+        @media screen and (min-width: $media-breakpoint-medium) and (orientation: landscape){
+           // margin: $margin-large $margin-medium;
         }
     }
 }
