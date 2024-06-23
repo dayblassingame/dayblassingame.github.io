@@ -13,7 +13,7 @@
 .overlay{
     background-color: $overlay;
     position: absolute;
-    z-index: 0;
+    z-index: -1;
     height: inherit;
     width: 100%;
     top: $header-height;
