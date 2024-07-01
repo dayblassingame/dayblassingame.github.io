@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import selfImg from './images/aboutImg.jpg';
 
 export default function Hero(){
-    const intro = "Dazhia*Blassingame";
+    const intro = "Day*Blassingame";
     let position = 0;
     let end = intro.length;
     let currentText = '';
