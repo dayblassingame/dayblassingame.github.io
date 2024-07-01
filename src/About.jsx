@@ -1,9 +1,10 @@
 import React from "react";
-import CV from './files/Day-Blassingame-CV.pdf';
+import CV from './files/Day-Blassingame-Resume.pdf';
 
 export default function About(){
+    
     const bio = {
-        intro: "I'm Dazhia!",
+        intro: "I'm Day!",
         summary: "A detail-oriented Frontend Engineer with a knack for creating intuitive and dynamic user experiences.",
         summary1: "With over 2 years of experience in front-end development, I have honed my skills in HTML, CSS, JavaScript, " +
         "and modern libraries and frameworks like React and Angular, building sleek UI components for a high-traffic, streaming company. I enjoy leading front-end projects, mentoring others, and enhancing user experience. "+
