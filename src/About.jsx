@@ -2,6 +2,7 @@ import React from "react";
 import CV from './files/Day-Blassingame-Resume.pdf';
 
 export default function About(){
+    
     const bio = {
         intro: "I'm Day!",
         summary: "A detail-oriented Frontend Engineer with a knack for creating intuitive and dynamic user experiences.",
