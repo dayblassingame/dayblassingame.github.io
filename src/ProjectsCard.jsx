@@ -1,17 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function ProjectCard (props){
     const name = props.name;
     const description = props.description;
     const imgPath = props.imgPath;
+    const mobileImgPath = props.mobileImgPath;
     const siteLink = props.siteLink;
     const gitLink = props.gitLink;
     const tools = props.tools;
+
+    const [imageShown, setImageShown] = useState(imgPath);
     
     return(
         <div className="p-C-projectCard_wrapper">
             <div className="p-C-projectCard_img_container">
-                <img src={imgPath} alt={name + ' project'} />
+                <img src={imageShown} alt={name + ' project'} onMouseOver={()=>setImageShown(mobileImgPath)} onMouseOut={()=>setImageShown(imgPath)}/>
             </div> 
             <span className="p-C-projectCard_info_container">
                 <h3>{name}</h3>

@@ -25,7 +25,7 @@
         z-index: 1;
 
         border-radius: 50%;
-        box-shadow: 5px -5px 15px rgb(0, 46, 46);
+        box-shadow: 5px -5px 15px $overlay;
 
         @media screen and (min-width: $media-breakpoint-small){
             display: inline-block;
@@ -55,6 +55,7 @@
         z-index: 1;
         margin: auto;
         margin-top: 120px;
+        text-shadow: 2px 2px 4px $overlay;
 
         @media screen and (min-width: $media-breakpoint-small){
             display: inline-block;
@@ -100,6 +101,7 @@
             display: block;
             text-decoration: none;
             animation: fade-in 7s 0s;
+            text-shadow: none;
 
             @media screen and (min-width: $media-breakpoint-medium){
                 width: 65%;

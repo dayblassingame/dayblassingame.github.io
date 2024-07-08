@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import selfImg from './images/aboutImg.jpg';
+import selfImg from './images/selfPortrait.jpg';
 
 export default function Hero(){
     const intro = "Day*Blassingame";
@@ -14,6 +14,7 @@ export default function Hero(){
 
     function typewriter(){
         const text = document.getElementById('intro');
+        
         setTimeout(()=>{
             if(intro.charAt(position) == '*'){
                 currentText = currentText + '\r\n';
@@ -45,10 +46,11 @@ export default function Hero(){
     return(
         <div id='hero' className="p-L-section_wrapper p-C-background_teal">
             <span className="overlay"/>
+            
             <div className="p-C-hero_container">
-                <div className="p-C-hero_img_wrapper">
-                    <img src={selfImg} alt="Day Blassingame Portrait"/>
-                </div>
+            <div className="p-C-hero_img_wrapper">
+                <img src={selfImg} alt="Day Blassingame Portrait"/>
+            </div>
                 <span className="p-C-hero_introContainer">
                     <h4>Hey, I'm</h4>
                     <h1 id='intro'></h1>
