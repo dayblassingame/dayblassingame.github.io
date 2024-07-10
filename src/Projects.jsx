@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectsCard";
-import CraftedCocktails from './images/CraftedCocktails.png';
-import Portfolio from './images/portfolio.png'
+import CraftedCocktails from './images/craftedcocktails.png';
+import CraftedMobile from './images/CraftedMobile.png';
 
 export default function Projects(){
 
@@ -16,20 +16,13 @@ export default function Projects(){
                         <ProjectCard
                             name='Crafted Cocktails'
                             imgPath={CraftedCocktails}
-                            description= {'Crafted Cocktails is a mutli-page web application that aims to transform an extensive collection of cocktail recipes'
+                            mobileImgPath={CraftedMobile}
+                            description= {'Crafted Cocktails is a single-page web application that aims to transform an extensive collection of cocktail recipes'
                             + 'into a visually appealing, user-friendly, accessible interface. ' + 
                             'It features a robust search functionality, carousels, and a hash router to ensure seamless navigation and improve user engagement.'}
                             siteLink='https://dayblassingame.github.io/Crafted'
-                            gitLink=''
+                            gitLink='https://github.com/dayblassingame/Crafted'
                             tools={['React', 'JavaScript', 'Sass', 'API integration', 'Webpack', 'NPM']}
-                        />
-                        <ProjectCard
-                            name='Portfolio'
-                            imgPath={Portfolio}
-                            description= {'Single page application constructed to showcase my projects. This application includes a controlled form that validates user data before sending it to Firebase.'}
-                            siteLink='https://dayblassingame.github.io/'
-                            gitLink=''
-                            tools={['React', 'JavaScript', 'Sass', 'Firebase', 'Webpack', 'NPM' ]}
                         />
                     </ul>
                 </div>

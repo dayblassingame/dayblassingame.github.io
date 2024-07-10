@@ -13,8 +13,9 @@
 
     .p-C-projectCard_img_container{
         display: block;
-        width: 80%;
+        width: 90%;
         margin: auto;
+        padding: $padding-large;
 
         @media screen and (min-width: $media-breakpoint-medium){
             width: 35%;
