@@ -3,81 +3,25 @@
     width: 100%;
     display: block;
     position: relative;
+    cursor:none;
     
-    background-color: $teal;
-    padding: $header-height 0px;
-
-    @media screen and (min-width: $media-breakpoint-small){
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-around;
-    }
-
-    .p-C-hero_img_wrapper{
-        position: relative;
-        display: block;
-        height: 150px;
-        width: 150px;
-        overflow: hidden;
-        float: right;  
-        margin-top: $header-height;
-        margin-right: $margin-medium;
-        z-index: 1;
-
-        border-radius: 50%;
-        box-shadow: 5px -5px 15px $overlay;
-
-        @media screen and (min-width: $media-breakpoint-small){
-            display: inline-block;
-            float: none;
-            margin: 20px auto;
-        }
-
-        @media screen and (min-width: $media-breakpoint-medium){
-            width: 280px;
-            height: 280px;
-            border-radius: 50%;
-            margin-left: $margin-extralarge;
-        }
-            
-        img{
-            display: block;
-            position: relative;
-            width: 100%;
-        }
-    }
-
     .p-C-hero_introContainer{
-        height: auto;
+        height: 550px;
         width: 90%;
         display: block;
         position: relative;
         z-index: 1;
         margin: auto;
-        margin-top: 120px;
-        text-shadow: 2px 2px 4px $overlay;
-
-        @media screen and (min-width: $media-breakpoint-small){
-            display: inline-block;
-            width: auto;
-            margin-top: 50px;
-            margin-right: $margin-extralarge;
-            //text-align: center;
-        }
+        padding-top: 30vh;
+        text-shadow: 2px 2px 8px $overlay;
 
         @media screen and (min-width: $media-breakpoint-medium){
-            width: 40%;
-            flex-grow: 0;
-        }
-
-        @media screen and (min-width: $media-breakpoint-large){
-            width: 30%;
+            text-align: center;
         }
 
         h1{
             height: auto;
-            color: $white;
-            margin: $margin-small 0px;
+            color: $vanilla;
             white-space: pre-wrap;
             text-transform: uppercase; 
                
@@ -86,31 +30,52 @@
         h3{
             color: $white;
             font-weight: 350;
-            margin: $margin-small 0px;
-
-            animation: fade-in 5.5s 0s;
+            margin-bottom: $margin-small;
+            animation: fade-in 3.5s 0s;
         }
 
-        h4{
-            display: block;
+        p{
             color: $vanilla;
-            animation: fade-in 1s 0s;
         }
 
-        a{
-            display: block;
+        .p-C-hero_link{
+            display: inline-block;
+            padding: $padding-small 0px;
+            border-bottom: 1px solid $vanilla;
+
             text-decoration: none;
-            animation: fade-in 7s 0s;
+            color: $vanilla;
+
+            animation: fade-in 4.5s 0s;
             text-shadow: none;
+            margin-top: 180px;
 
             @media screen and (min-width: $media-breakpoint-medium){
-                width: 65%;
-                text-align: center;
-                margin-top: $margin-medium;
+                margin-top: 100px;
+                font-size: 20px;
             }
         }
     }
 }
+
+.cursor {
+    position: absolute;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s, opacity 0.1s;
+    mix-blend-mode: difference;
+    animation: colorChange 6s infinite;
+  }
+
+  @keyframes colorChange {
+    0% { background-color: #fa027e; box-shadow: 0 0 15px rgba(250, 2, 126, 0.8); }
+    35% { background-color: #00ff00; box-shadow: 0 0 15px rgba(0, 255, 0, 0.8); }
+    60% { background-color: #0000ff; box-shadow: 0 0 15px rgba(0, 0, 255, 0.8); }
+    100% { background-color: #fa027e; box-shadow: 0 0 15px rgba(250, 2, 126, 0.8); }
+  }
 
 @keyframes fade-in{
     0%{opacity: 0;}
