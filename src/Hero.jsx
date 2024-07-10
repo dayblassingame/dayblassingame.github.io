@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
-import selfImg from './images/selfPortrait.jpg';
+import { FaLongArrowAltRight } from "react-icons/fa";
 
 export default function Hero(){
-    const intro = "Day*Blassingame";
+    const intro = "Day Blassingame";
     let position = 0;
     let end = intro.length;
     let currentText = '';
@@ -16,11 +16,6 @@ export default function Hero(){
         const text = document.getElementById('intro');
         
         setTimeout(()=>{
-            if(intro.charAt(position) == '*'){
-                currentText = currentText + '\r\n';
-                text.textContent = currentText;
-                position++;
-            }
             if(position < end){
                 currentText += intro.charAt(position);
                 position++;
@@ -39,24 +34,45 @@ export default function Hero(){
             const text = document.getElementById('intro');
             text.textContent = intro;
         }else{
-            delay(1500)
+            delay(600)
         }
     },[])
 
+    document.addEventListener('DOMContentLoaded', () => {
+        const cursor = document.querySelector('.cursor');
+      
+        let mouseX = 0;
+        let mouseY = 0;
+        let cursorX = 0;
+        let cursorY = 0;
+      
+        document.addEventListener('mousemove', e => {
+          mouseX = e.clientX;
+          mouseY = e.clientY;
+        });
+      
+        function animatecursor() {
+          cursorX += (mouseX - cursorX) * 0.15;
+          cursorY += (mouseY - cursorY) * 0.15;
+      
+          cursor.style.left = `${cursorX}px`;
+          cursor.style.top = `${cursorY}px`;
+      
+          requestAnimationFrame(animatecursor);
+        }
+      
+        animatecursor();
+      });
+
     return(
-        <div id='hero' className="p-L-section_wrapper p-C-background_teal">
-            <span className="overlay"/>
-            
-            <div className="p-C-hero_container">
-            <div className="p-C-hero_img_wrapper">
-                <img src={selfImg} alt="Day Blassingame Portrait"/>
-            </div>
+        <div id='hero' className="p-L-section_wrapper p-C-background_black">
+             <div className='cursor'></div>
+             <div className="p-C-hero_container">
                 <span className="p-C-hero_introContainer">
-                    <h4>Hey, I'm</h4>
                     <h1 id='intro'></h1>
-                    <h3>Front End Engineer</h3> 
-                    <a className='p-L-section_button' href="#about">
-                        Learn More
+                    <h3> Junior Front End Engineer</h3> 
+                    <a className='p-C-hero_link'href="#about">
+                        Learn more about me <FaLongArrowAltRight/>
                     </a>    
                 </span>
             </div>            

@@ -22,7 +22,7 @@
     text-align: left;
     width: 20%;
     height: auto;
-    margin-left: 2.5rem;
+    margin-left: $margin-small;
 
     .p-C-logo_img{
         height: 3.1rem;
@@ -88,7 +88,7 @@
             }
 
             @media screen and (min-width: $media-breakpoint-small){
-                font-size: 17.5px;
+                font-size: 15.5px;
             }
 
             @media screen and (min-width: $media-breakpoint-medium) and (orientation: landscape){
