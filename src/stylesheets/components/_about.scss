@@ -7,84 +7,45 @@
         justify-content: space-evenly;
     }
 
-    .p-C-about_img_wrapper{
-        position: relative;
-        display: block;
-        height: 407px;
-        width: 75%;
-        overflow: hidden;
-        margin: $margin-extralarge auto;  
-
-        @media screen and (min-width: $media-breakpoint-small){
-            height: 450px;
-            width: 60%;
-        }
-
-        @media screen and (min-width: $media-breakpoint-medium){
-            height: 580px;
-            width: 60%;
-
-            @media (orientation: landscape){
-                width: 50%;
-                height: 480px;
-            }
-        }
-
-        @media screen and (min-width: $media-breakpoint-large){
-            height: 680px;
-            width: 60%;
-        }
-
-        @media screen and (min-width: $media-breakpoint-large){
-            display: inline-block;
-            height: 350px;
-            width: 30%;
-        }
-
-        @media screen and (min-width: $media-breakpoint-extralarge){
-            display: inline-block;
-            height: 350px;
-            width: 25%;
-        }
-            
-        img{
-            display: block;
-            position: relative;
-            width: 100%;
-        }
-    }
-
     .p-C-about_text{
         display: block;
-        width: 90%;
+        width: 95%;
         margin: $margin-medium auto;
-        text-align: center;
+        text-align: left;
 
         @media screen and (min-width: $media-breakpoint-large){
             text-align: left;
             display: inline-block;
-            width: 50%;
+            width: 80%;
+        }
+
+        h5{
+            padding-top: $padding-large;
+            font-weight: normal;
         }
 
         p{
             display: block;
-            margin: $margin-small 0px;
+            margin: $margin-large 0px;
+
             color: $darkgrey;
-            letter-spacing: 1.3px;
+            letter-spacing: 1px;
 
             @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
                 margin: $margin-medium 0px;
             }
         }
     }
+
     
     a{
-        margin: $margin-large auto;
-        display: block;
+        margin: $margin-large 2px;
+        display: inline-block;
+    
         text-decoration: none;
 
-        @media screen and (min-width: $media-breakpoint-large) and (orientation: landscape){
-            margin: $margin-large 0px;
+        @media screen and (min-width: $media-breakpoint-medium) and (orientation: landscape){
+           // margin: $margin-large $margin-medium;
         }
     }
 }

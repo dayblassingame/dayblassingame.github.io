@@ -56,9 +56,9 @@ export default function Contact(){
         <div id='contact' className="p-L-section_wrapper">
             <div  className="p-C-contact">
                 <div className="p-L-heading_border p-L-contact_heading">
-                    <h4 className='p-L-section_h4'>/contact</h4>
+                    <h4 className='p-L-section_h4'>Contact</h4>
                 </div>
-                <p>Need a well constructed, responsive webpage. Leave me a message!</p>
+                <p>Want to collab? Leave me a message!</p>
 
                 <form onSubmit={handleForm} method="POST" className="p-C-contact_form">
                     <input required type="text" id='name' placeholder="Name" autoComplete="off" value={newMessage.name} onChange={data}/>

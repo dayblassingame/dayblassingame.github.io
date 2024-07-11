@@ -13,7 +13,7 @@ export default function Footer(){
             <h5>Legal</h5>
             <span className="p-C-footer_legal">
                 <a data-testid='license' href="https://www.apache.org/licenses/">License</a>
-                <p>@2024 Day Blassingame</p>
+                <p>Hand Crafted By Me</p>
             </span>
         </div>
     )

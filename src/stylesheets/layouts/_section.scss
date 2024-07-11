@@ -1,5 +1,4 @@
 .p-L-section_wrapper{
-    background-color: $white;
     height: auto;
     min-height: 70vh;
     width: 100%;
@@ -14,8 +13,8 @@
         margin-left: $margin-medium;
         font-weight: 400;
         color: $teal;
-        text-transform: lowercase;
         word-spacing: 3px;
+        text-align: center;
 
         @media screen and (min-width: $media-breakpoint-large){
             margin-left: $margin-extralarge;
@@ -30,19 +29,19 @@
             font-size: $font-size-small;
             font-family: $font-family;
             font-weight: 300;
-            background-color: $vanilla;
-            color: $teal;
+            background-color: $black;
+            color: $vanilla;
 
-            border: 1px solid $teal;
+            border: 1px solid $black;
             border-radius: 40px;
 
             transition:0.25s;
             cursor: pointer;
 
             &:hover{
-                color: $vanilla;
+                color: $black;
                 border: 1px solid $vanilla;
-                --hover: #{adjust-hue($teal, 0deg)};
+                --hover: #{adjust-hue($vanilla, 0deg)};
                 box-shadow: inset 15.5em 0 0 0 var(--hover);
             }
 

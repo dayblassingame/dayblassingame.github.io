@@ -1,116 +1,86 @@
 .p-C-hero_container{
-    height: 100vh;
+    height: 550px;
     width: 100%;
     display: block;
-    background-color: $teal;
-
-    @media screen and (min-width: $media-breakpoint-small) and (orientation: landscape){
-        height: 110vh;
-    }
-
-
+    position: relative;
+    cursor:none;
+    
     .p-C-hero_introContainer{
-        height: auto;
+        height: 550px;
         width: 90%;
         display: block;
-        margin: 50% auto;
-
-        @media screen and (min-width: $media-breakpoint-extrasmall){
-            margin: 35% 0px;
-            padding-left: 2%;
-        }
-
-        @media screen and (min-width: $media-breakpoint-small){
-            margin: 30% 0px;
-            padding-left: 5%;
-
-            @media (orientation: landscape){
-                margin: 10% 0px;
-            }
-        }
+        position: relative;
+        z-index: 1;
+        margin: auto;
+        padding-top: 30vh;
+        text-shadow: 2px 2px 8px $overlay;
 
         @media screen and (min-width: $media-breakpoint-medium){
-            margin: 40% 0px;
             text-align: center;
-
-            @media screen and (orientation: landscape){
-                margin: 10% 0px;
-            }
         }
-
-        @media screen and (min-width: $media-breakpoint-large){
-            margin: 40% 0px;
-            text-align: center;
-
-            @media screen and (orientation: landscape){
-                margin: 12% 0px;
-            }
-        }
-
-        @media screen and (min-width: $media-breakpoint-extralarge){
-            margin: 40% 0px;
-            text-align: center;
-
-            @media screen and (orientation: landscape){
-                margin: 10% 0px;
-            }
-        }
-
-       
-
 
         h1{
             height: auto;
-            color: $white;
-            margin: $margin-medium 0px;
+            color: $vanilla;
             white-space: pre-wrap;
-            text-transform: uppercase;
-
-            @media screen and (min-width: $media-breakpoint-small) and (orientation: landscape){
-                white-space: nowrap;
-                margin: $margin-small 0px;
-            }
-
-            @media screen and (min-width: $media-breakpoint-large){
-                margin: $margin-large 0px;
-            }
-            
+            text-transform: uppercase; 
+               
         }
 
         h3{
             color: $white;
             font-weight: 350;
-            margin: $margin-medium 0px;
-
-            animation: fade-in 5.5s 0s;
-
-
-            @media screen and (min-width: $media-breakpoint-large){
-                margin: $margin-small auto;
-                padding-bottom: $padding-large;
-            }
+            margin-bottom: $margin-small;
+            animation: fade-in 3.5s 0s;
         }
 
-        h4{
+        p{
             color: $vanilla;
-            animation: fade-in 1s 0s;
+        }
 
-            @media screen and (min-width: $media-breakpoint-large){
-                margin: $margin-small auto;
+        .p-C-hero_link{
+            display: inline-block;
+            padding: $padding-small 0px;
+            border-bottom: 1px solid $vanilla;
 
+            text-decoration: none;
+            color: $vanilla;
+
+            animation: fade-in 4.5s 0s;
+            text-shadow: none;
+            margin-top: 180px;
+
+            @media screen and (min-width: $media-breakpoint-medium){
+                margin-top: 100px;
+                font-size: 20px;
+            }
+
+            &:hover{
+                color: white;
+                border-bottom: 1px solid white;
             }
         }
-    
-
-        a{
-            text-decoration: none;
-            animation: fade-in 7s 0s;
-
-
-        }
-
     }
 }
+
+.cursor {
+    position: absolute;
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s, opacity 0.1s;
+    mix-blend-mode: difference;
+    animation: colorChange 6s infinite;
+  }
+
+  @keyframes colorChange {
+    0% { background-color: #fa027e; box-shadow: 0 0 15px rgba(250, 2, 126, 0.8); }
+    35% { background-color: #00ff00; box-shadow: 0 0 15px rgba(0, 255, 0, 0.8); }
+    60% { background-color: #0000ff; box-shadow: 0 0 15px rgba(0, 0, 255, 0.8); }
+    100% { background-color: #fa027e; box-shadow: 0 0 15px rgba(250, 2, 126, 0.8); }
+  }
 
 @keyframes fade-in{
     0%{opacity: 0;}

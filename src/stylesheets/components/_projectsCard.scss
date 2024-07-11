@@ -1,28 +1,38 @@
 .p-C-projectCard_wrapper{
     display: block;
     height: auto;
-    width: 90%;
-    margin: $margin-small auto;
+    width: 95%;
+    margin: $margin-large auto;
     text-align: center;
 
-    @media screen and (min-width: $media-breakpoint-large){
+    @media screen and (min-width: $media-breakpoint-medium){
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
     .p-C-projectCard_img_container{
-        display: block;
-        width: 90%;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        max-height: 40vh;
         margin: auto;
+        padding: $padding-large;
 
-        @media screen and (min-width: $media-breakpoint-large){
+        @media screen and (min-width: $media-breakpoint-medium){
             width: 35%;
         }
 
         img{
-            width: 100%;
+            max-height: 40vh;
+            max-width: 70%;
             display: block;
+        }
+
+        span{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
     }
 
@@ -38,15 +48,32 @@
         h3{
             display: block;
             color: $teal;
-            margin: $margin-large 0px;
+            margin: $margin-medium 0px;
             font-weight: 600;
             font-family:'Courier New', Courier, monospace;
 
         }
     
         p{
+            width: 90%;
             color: $darkgrey;
-            margin: $padding-medium 0rem;
+            margin: $padding-medium auto;
+            text-align: left;
+        }
+
+        ul{
+            list-style: none;
+
+            li{
+                display: inline-block;
+                width: auto;
+                margin: 1px 1px;
+                padding: $padding-small $padding-large;
+
+                border-radius: 20px;
+                background-color: $teal;
+                color: $white;
+            }
         }
     
         span{
@@ -63,7 +90,7 @@
                 pointer-events: none;
                 cursor: not-allowed;
                 background-color: $overlay;
-                color: $black;
+                color: $white;
                 border-color: $teal;
             }
         }    
