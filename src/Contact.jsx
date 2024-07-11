@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import firebase from 'firebase/app';
 
 export default function Contact(){
     const[newMessage, setMessage] = useState(
