@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Welcome to Day Blassingame's digital showcase, a Front-end Engineer passionate about creating high fidelity user experiences. This portfolio is a curated collection of my work, projects, and experiences, providing a glimpse into my skills and dedication to delivering high-quality results.",
   "main": "index.js",
   "scripts": {
