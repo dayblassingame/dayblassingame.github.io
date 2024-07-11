@@ -17,7 +17,7 @@ export default function ProjectCard (props){
     return(
         <div className="p-C-projectCard_wrapper">
             <div className="p-C-projectCard_img_container">
-                <img src={imageShown} alt={name + ' project'} onMouseOver={()=>setImageShown(mobileImgPath)} onMouseOut={()=>setImageShown(imgPath)}/>
+                <img loading="lazy"  src={imageShown} alt={name + ' project'} onMouseOver={()=>setImageShown(mobileImgPath)} onMouseOut={()=>setImageShown(imgPath)}/>
                 <span>
                     <a className={siteLink==='' ? 'p-L-section_button disabled' : 'p-L-section_button'} href={siteLink}><FaLink/></a>
                     <a className={gitLink==='' ? 'p-L-section_button disabled' : 'p-L-section_button'} href={gitLink}><FaGithub/></a>

@@ -4,7 +4,7 @@ import CV from './files/Day-Blassingame-Resume.pdf';
 export default function About(){
     
     const bio = {
-        intro: "I'm Dazhia!",
+        intro: "I'm Day!",
         summary: `As a Frontend Engineer with 2 years of experience, 
         I've honed my skills in frontend development, constructing modern, scalable web apps for companies such as Spectrum Communications,
         Rocket Mortgage, and Michelin!`,
