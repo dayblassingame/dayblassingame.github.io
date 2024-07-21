@@ -1,58 +1,56 @@
-.p-L-section_wrapper{
+.p-L-section_wrapper {
+  height: auto;
+  min-height: 70vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: $header-height 0px;
+
+  .p-L-section_h4 {
     height: auto;
-    min-height: 70vh;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    padding: $header-height 0px;
+    width: auto;
+    padding-bottom: $padding-extralarge;
+    margin-left: $margin-medium;
+    font-weight: 400;
+    color: $teal;
+    word-spacing: 3px;
+    text-align: center;
 
-    .p-L-section_h4{
-        height: auto;
-        width: auto;
-        padding-bottom: $padding-extralarge;
-        margin-left: $margin-medium;
-        font-weight: 400;
-        color: $teal;
-        word-spacing: 3px;
-        text-align: center;
+    @media screen and (min-width: $media-breakpoint-large) {
+      margin-left: $margin-extralarge;
+    }
+  }
 
-        @media screen and (min-width: $media-breakpoint-large){
-            margin-left: $margin-extralarge;
-        }
+  .p-L-section_button {
+    height: auto;
+    width: fit-content;
+    padding: $padding-medium $padding-large;
+
+    font-size: $font-size-small;
+    font-family: $font-family;
+    font-weight: 300;
+    background-color: $black;
+    color: $vanilla;
+
+    border: 1px solid $black;
+    border-radius: 40px;
+
+    transition: 0.25s;
+    cursor: pointer;
+
+    &:hover {
+      color: $black;
+      border: 1px solid $vanilla;
+      --hover: #{adjust-hue($vanilla, 0deg)};
+      box-shadow: inset 15.5em 0 0 0 var(--hover);
     }
 
-    .p-L-section_button{
-            height: auto;
-            width: fit-content;
-            padding: $padding-medium $padding-large;
+    @media screen and (min-width: $media-breakpoint-extrasmall) {
+      font-size: 1.7rem;
+    }
 
-            font-size: $font-size-small;
-            font-family: $font-family;
-            font-weight: 300;
-            background-color: $black;
-            color: $vanilla;
-
-            border: 1px solid $black;
-            border-radius: 40px;
-
-            transition:0.25s;
-            cursor: pointer;
-
-            &:hover{
-                color: $black;
-                border: 1px solid $vanilla;
-                --hover: #{adjust-hue($vanilla, 0deg)};
-                box-shadow: inset 15.5em 0 0 0 var(--hover);
-            }
-
-            @media screen and (min-width: $media-breakpoint-extrasmall){
-                font-size: 1.7rem;
-            }
-
-            @media screen and (min-width: $media-breakpoint-small) and (orientation: portrait){
-                font-size: 2rem;
-            }
-
-        }
-
+    @media screen and (min-width: $media-breakpoint-small) and (orientation: portrait) {
+      font-size: 2rem;
+    }
+  }
 }
